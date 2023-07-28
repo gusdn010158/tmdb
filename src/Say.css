@@ -1,0 +1,387 @@
+.sc2{
+    width:1300px;
+    height: 443px;
+    background-image: url(https://www.themoviedb.org/assets/2/v4/misc/trendi…25c187814c0a2efef225494c038098d62317d923f8415.svg);
+    background-position: 50% 200px;
+    
+      background-repeat: no-repeat;
+   
+  }
+  .sc2_2{
+    width:100%;
+    height: 100%;
+  
+  }
+  .sc2_3{
+    width:100%;
+    height: 100%;
+  padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  
+      .sc2_header{    
+    display:flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  }
+  .sc2_header>h2{ 
+    margin:0;
+    margin-right: 20px;
+  }
+.sc2_header_b{
+    border:1px solid #032541;
+    border-radius: 30px; 
+    display:flex;
+  }
+  .sc2_header_button{
+   
+    border-radius: 30px;  
+  }
+  .sc2_header_button1{
+  background: #032541;
+  border-color: #032541;
+  border-radius: 30px;
+  }
+  .sc2_header_button2{
+  
+  }
+  .sc2_header_button1>h3{
+    background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0;
+    padding: 4px 20px;
+  }
+  .sc2_header_button2>h3{
+    margin:0;
+    
+    padding: 4px 20px;
+  }
+
+
+  .sc2_content{
+    overflow-x: scroll;
+    overflow-x: auto;
+   width:100%;
+   height:100%;
+  padding-top: 20px;
+  
+  
+  }
+  
+  .sc2_1content{
+    overflow-x: scroll;
+    overflow-x: auto;
+   width:100%;
+   height:100%;
+  padding-top: 20px;
+  background-color: #032541;
+  }
+  .sc2_content::-webkit-scrollbar {
+    width: 10px;
+  }
+  .sc2_content::-webkit-scrollbar-thumb {
+    background-color: #cfd3da;
+    background-clip: padding-box;
+      border: 5px solid transparent;
+    border-radius: 30px;
+  }
+  .sc2_content::-webkit-scrollbar-track {
+    background-color:white;
+  }
+  
+  .sc2_content_in{
+    display:flex;
+   flex-wrap: nowrap;
+  }
+  .sc2_content_in1{
+   
+  
+    width: 150px;
+    min-width:150px;
+   
+  }
+  
+  .in11_img{
+  background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  
+  }
+  .in11_img_content{
+    flex-wrap: wrap;
+    padding: 26px 10px 12px 10px;
+    height:100px;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .in11_img_content>h2{
+    font-size: 18px;
+    padding:0;
+    margin:0;
+  }
+  
+  
+  
+  
+  .sc2_content_in2{
+    margin-left: 20px;
+    width: 150px;
+    min-width:150px;
+    
+  }
+  .in22_img{
+    background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/z56bVX93oRG6uDeMACR7cXCnAbh.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  }
+  .in22_img_content{
+    flex-wrap: wrap;
+    padding: 26px 10px 12px 10px;
+    height:100px;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .in22_img_content>h2{
+    font-size: 18px;
+    padding:0;
+    margin:0;
+  }
+  
+  
+  .sc2_content_in3{
+    margin-left: 20px;
+      width: 150px;
+      min-width:150px;
+    }
+    .in33_img{
+      background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/2Bi9OTGNAkNjStDnMDR93GPgwFY.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    width:100%;
+    height:220px;
+    display:inline-block;
+    box-sizing: border-box;
+    }
+    .in33_img_content{
+      flex-wrap: wrap;
+      padding: 26px 10px 12px 10px;
+      height:100px;
+      width:100%;
+      box-sizing: border-box;
+    }
+    .in33_img_content>h2{
+      font-size: 18px;
+      padding:0;
+      margin:0;
+    }
+  .sc2_content_in4{
+    margin-left: 20px;
+        width: 150px;
+        min-width:150px;
+        height:100%;
+      
+      }
+      .in44_img{
+        background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/v0TtgXaZZ6NeDxKackgQK9byEDL.jpg);
+      background-size: cover;
+      border-radius: 5%;
+      width:100%;
+      height:220px;
+      display:inline-block;
+      box-sizing: border-box;
+      }
+      .in44_img_content{
+        flex-wrap: wrap;
+        padding: 26px 10px 12px 10px;
+        height:100px;
+        width:100%;
+        box-sizing: border-box;
+      }
+      .in44_img_content>h2{
+        font-size: 18px;
+        padding:0;
+        margin:0;
+      }
+  
+  .sc2_content_in5{
+        margin-left: 20px;
+            width: 150px;
+            min-width:150px;
+            height:100%;
+           
+  }
+  .in55_img{
+    background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/5Wnt03vRoKphp1ADWgHKus20vLX.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  }
+  .in55_img_content{
+    flex-wrap: wrap;
+    padding: 26px 10px 12px 10px;
+    height:100px;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .in55_img_content>h2{
+    font-size: 18px;
+    padding:0;
+    margin:0;
+  }
+  
+  .sc2_content_in6{
+    margin-left: 20px;
+        width: 150px;
+        min-width:150px;
+        height:100%;
+       
+  }
+  .in66_img{
+  background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/tNWCukAMubqisamYURvo5jw61As.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  }
+  .in66_img_content{
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height:100px;
+  width:100%;
+  box-sizing: border-box;
+  }
+  .in66_img_content>h2{
+  font-size: 18px;
+  padding:0;
+  margin:0;
+  }
+  
+  .sc2_content_in7{
+    margin-left: 20px;
+        width: 150px;
+        min-width:150px;
+        height:100%;
+       
+  }
+  .in77_img{
+  background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/wfZklSVDJPpHT0Arq4A8GY8Q9S9.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  }
+  .in77_img_content{
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height:100px;
+  width:100%;
+  box-sizing: border-box;
+  }
+  .in77_img_content>h2{
+  font-size: 18px;
+  padding:0;
+  margin:0;
+  }
+  
+  .sc2_content_in8{
+    margin-left: 20px;
+        width: 150px;
+        min-width:150px;
+        height:100%;
+       
+  }
+  .in88_img{
+  background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/rbtgorwuTBoAu0Qm5IvZoQl75WU.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  }
+  .in88_img_content{
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height:100px;
+  width:100%;
+  box-sizing: border-box;
+  }
+  .in88_img_content>h2{
+  font-size: 18px;
+  padding:0;
+  margin:0;
+  }
+  
+  .sc2_content_in9{
+    margin-left: 20px;
+        width: 150px;
+        min-width:150px;
+        height:100%;
+       
+  }
+  .in99_img{
+  background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/yisnA4KdZOfJeDve3DekgUpeCe9.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  }
+  .in99_img_content{
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height:100px;
+  width:100%;
+  box-sizing: border-box;
+  }
+  .in99_img_content>h2{
+  font-size: 18px;
+  padding:0;
+  margin:0;
+  }
+  
+  .sc2_content_in10{
+    margin-left: 20px;
+        width: 150px;
+        min-width:150px;
+        height:100%;
+       
+  }
+  .in1010_img{
+  background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/hnwq7IbbmBVLGaXcdoTiEk4Z63q.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width:100%;
+  height:220px;
+  display:inline-block;
+  box-sizing: border-box;
+  }
+  .in1010_img_content{
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height:100px;
+  width:100%;
+  box-sizing: border-box;
+  }
+  .in1010_img_content>h2{
+  font-size: 18px;
+  padding:0;
+  margin:0;
+  }

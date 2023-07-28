@@ -1,0 +1,95 @@
+.h{
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  top:0px;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  z-index: 10;
+    background-color: #032541;
+    transition:all 2s;
+  
+  }
+  .h.tada{
+    top: -64px;  
+   
+  }
+.c{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.content_m{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #032541;
+  width: 100%;
+  padding: 0 40px;
+}
+.content_o{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: visible;
+}
+
+
+
+.n_log{
+  display: block;
+  margin-right: 16px;
+  width: 154px;
+  height: 20px;
+}
+
+.n_logo{
+  object-fit: fill;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/89/Tmdb.new.logo.svg);
+  display: block;
+    margin-right: 16px;
+    width: 154px;
+    height: 20px;
+}
+
+.n_title{
+  display:flex;
+  
+  margin:0;
+  padding:0;
+}
+.title_a{
+  list-style: none;
+  margin-right:10px;
+  
+  padding: 15px;
+  font-weight: 60px;
+  
+}
+
+
+.f_title{
+  display:flex;
+ 
+  margin-top:20px;
+  padding:0;
+}
+.f1{
+  list-style: none;
+  margin-right:30px;
+  font-weight: 60px;
+}
+.f2{
+  list-style: none;
+  margin-right:30px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  
+  font-weight: 60px;
+}
