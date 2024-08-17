@@ -1,252 +1,224 @@
-.App{
-  width: 1519px; 
+.App {
+  width: 100%;
   height: 2000px;
   box-sizing: border-box;
- 
 }
-.media{
+.media {
   display: flex;
   justify-content: space-around;
-  position:relative;
-  height:100%;
-  width:100%;
-  float:left;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  float: left;
 }
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
-  position:relative;
+  position: relative;
   list-style: none;
   height: 100%;
-  float:left;
+  float: left;
 }
 
-.content{
-  position:relative;
-  background-color:#032541;
-  width:100%;
+.content {
+  position: relative;
+  background-color: #032541;
+  width: 100%;
   height: 40px;
-  top:20px;
+  top: 20px;
   list-style: none;
 }
 
-.main{
+.main {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
-  width:1519px;
-  height:2000px;
 }
-.sc1{
-  
-  width:1300px;
+.sc1 {
+  width: 1300px;
   height: 360px;
 }
-.discover{
-  position:relative;
-  width:1300px;
+.discover {
+  position: relative;
+  width: 1300px;
   height: 360px;
   background-image: url("./images/movie.jpg");
 }
-.wrapper{
+.wrapper {
   flex-direction: column;
-  position:relative;
-  
-  width:1300px;
-  height:244px;
+  position: relative;
+
+  width: 1300px;
+  height: 244px;
 }
-.wrap{
-  display:flex;
+.wrap {
+  display: flex;
   flex-direction: column;
-  position:relative;
-  width:1220px;   
-  height:194px;
+  position: relative;
+  width: 1220px;
+  height: 194px;
   padding: 40px 40px 40px 40px;
-  margin:0;
-}
-.titles{
   margin: 0;
-  padding:0;
-  color:white;
+}
+.titles {
+  margin: 0;
+  padding: 0;
+  color: white;
   margin-bottom: 56px;
 }
-.titles>h2{
-  margin:0;
-font-size: 50px;
+.titles > h2 {
+  margin: 0;
+  font-size: 50px;
 }
-.titles>h3{
-  margin:0;
-font-size: 25px;
+.titles > h3 {
+  margin: 0;
+  font-size: 25px;
 }
-.dd{
-  position:relative;
+.dd {
+  position: relative;
 }
-#input1{
-  position:absolute;
-  border-radius: 30px;
-  width:1190px;
-  height:46px;
-border: none;
-  
-}
-#input2{
-  font-size:15px;
-  color:#fff;
+#input1 {
   position: absolute;
   border-radius: 30px;
-  width:110px;
-  height:48px;
-top:0px;
-right:25px;
-border: none;
-background: linear-gradient(to right, rgb(54, 188, 168), rgb(44, 230, 240));
+  width: 1190px;
+  height: 46px;
+  border: none;
+}
+#input2 {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  border-radius: 30px;
+  width: 110px;
+  height: 48px;
+  top: 0px;
+  right: 25px;
+  border: none;
+  background: linear-gradient(to right, rgb(54, 188, 168), rgb(44, 230, 240));
 }
 
-.sc5{
-
-box-sizing:border-box;
+.sc5 {
+  box-sizing: border-box;
   object-fit: cover;
-  background-image: url(	https://image.tmdb.org/t/p/w1920_and_h600_multi_faces/rGbRnRvkmrSub07ty89Vnlsh6UX.jpg);
-  background-blend-mode:multiply;
-background-color: rgb(93, 93, 180);
-  width:1300px;
-  height:300px;
-  background-position:50% 50%;
+  background-image: url(https://image.tmdb.org/t/p/w1920_and_h600_multi_faces/rGbRnRvkmrSub07ty89Vnlsh6UX.jpg);
+  background-blend-mode: multiply;
+  background-color: rgb(93, 93, 180);
+  width: 1300px;
+  height: 300px;
+  background-position: 50% 50%;
 }
-.sc5_div{
-  box-sizing:border-box;
-  display:flex;
-  height:300px;
-flex-direction:column;
+.sc5_div {
+  box-sizing: border-box;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
   padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.sc5_txt{
-  width:31%;
-display: inline;
-
+.sc5_txt {
+  width: 31%;
+  display: inline;
 }
-.sc5_txt>h2{
-  
-  margin:0;
-  font-family: 'Inter';
+.sc5_txt > h2 {
+  margin: 0;
+  font-family: "Inter";
   font-weight: 700;
   font-size: 60px;
-  color:#fff;
-  border-bottom:1px solid#fff;
+  color: #fff;
+  border-bottom: 1px solid#fff;
 }
-.sc5_txt2{
-  position:relative;
-  width:33%;
-  font-family: 'Inter';
+.sc5_txt2 {
+  position: relative;
+  width: 33%;
+  font-family: "Inter";
   padding-top: 5px;
- display:inline;
-  color:#fff;
-}
-.sc5_txt2>h3{
-  position:absolute;
-  margin:0;
-  margin-bottom:20px;
-}
-.sc5_txt2>h4{
-  top:40px;
-  margin:0;
-  position:absolute;
   display: inline;
-  color:#fff;
+  color: #fff;
+}
+.sc5_txt2 > h3 {
+  position: absolute;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.sc5_txt2 > h4 {
+  top: 40px;
+  margin: 0;
+  position: absolute;
+  display: inline;
+  color: #fff;
   border: 2px solid #fff;
-    border-radius: 30px;
-    padding: 8px 16px;
+  border-radius: 30px;
+  padding: 8px 16px;
 }
 
-
-.sc4{
-  width:1300px;
-  height:388px;
-background-image: url(https://www.themoviedb.org/t/p/w1920_and_h427_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg);
-background-color:linear-gradient(to right,rgb(3,37,65,0.75),rgba(3,37,65, 0.75));
-background-blend-mode:multiply;
-/* filter: drop-shadow(0 0 0 rgb(8, 8, 36)); */
-
-
+.sc4 {
+  width: 1300px;
+  height: 388px;
+  background-image: url(https://www.themoviedb.org/t/p/w1920_and_h427_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg);
+  background-color: linear-gradient(
+    to right,
+    rgb(3, 37, 65, 0.75),
+    rgba(3, 37, 65, 0.75)
+  );
+  background-blend-mode: multiply;
+  /* filter: drop-shadow(0 0 0 rgb(8, 8, 36)); */
 }
 
-
-
-
-.sc4_3{
-  
+.sc4_3 {
   box-sizing: border-box;
   padding-top: 30px;
-      height:100%;
-   
-}    
-
-.sc4_4{
-
-  
-  height:100%;
-        
-}  
-.sc4_header{
-  align-items: center;
-  padding-left: 30px;  
-  display:flex;
-color:aliceblue;
+  height: 100%;
 }
-.sc4_header>h2{
 
+.sc4_4 {
+  height: 100%;
+}
+.sc4_header {
+  align-items: center;
+  padding-left: 30px;
+  display: flex;
+  color: aliceblue;
+}
+.sc4_header > h2 {
   border-color: #032541;
-  border-radius: 30px;  
+  border-radius: 30px;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 30px;
 }
-.sc4_s{
-  
-  display:flex;
- 
+.sc4_s {
+  display: flex;
+
   align-items: center;
 }
-.sc4_sa{
- 
+.sc4_sa {
   border-color: #032541;
   border-radius: 30px;
-
 }
-.sc4_sa>h3{
-
-  padding: 4px 15px;  
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.sc4_sb>h3{
-
-
+.sc4_sa > h3 {
   padding: 4px 15px;
   margin-top: 0;
   margin-bottom: 0;
-
 }
-.sc4_sc>h3{
-
+.sc4_sb > h3 {
   padding: 4px 15px;
   margin-top: 0;
   margin-bottom: 0;
-
 }
-.sc4_sd>h3{
-  
+.sc4_sc > h3 {
   padding: 4px 15px;
   margin-top: 0;
   margin-bottom: 0;
-
 }
-.sc4_content{
-  
+.sc4_sd > h3 {
+  padding: 4px 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sc4_content {
   height: 250px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -259,351 +231,324 @@ color:aliceblue;
 .sc4_content::-webkit-scrollbar-thumb {
   background-color: #cfd3da;
   background-clip: padding-box;
-    border: 5px solid transparent;
+  border: 5px solid transparent;
   border-radius: 30px;
 }
 .sc4_content::-webkit-scrollbar-track {
-  background-color:white;
+  background-color: white;
 }
 
-
-.sc4_content_in{
-  
-  display:flex;
- flex-wrap: nowrap;
- height:100%;
+.sc4_content_in {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
 }
 
-.sc4_content1{ 
- 
+.sc4_content1 {
   margin-left: 40px;
-  width:300px;
-  min-width:300px;
+  width: 300px;
+  min-width: 300px;
 }
-.sc4_content1_img{
- 
+.sc4_content1_img {
   border-radius: 5px;
-  height:168px;
-  width:100%;
+  height: 168px;
+  width: 100%;
   background-size: cover;
   background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg);
 }
-.sc4_content1_img:hover{
-  transition:all 0.5s;
+.sc4_content1_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content1_img:hover>.sc4{
-  transition:all 0.5s;
+.sc4_content1_img:hover > .sc4 {
+  transition: all 0.5s;
   transform: scale(1.1);
-  background-color:#00e45f;
+  background-color: #00e45f;
 }
-.sc4_content1_txt{ 
- color:#fff;
- display:flex;
- flex-direction: column;
- align-items: center;
+.sc4_content1_txt {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.sc4_content1_txt>h3{
-  padding-top:20px;
-  margin:0;
+.sc4_content1_txt > h3 {
+  padding-top: 20px;
+  margin: 0;
 }
 
-.sc4_content2{ 
+.sc4_content2 {
   margin-left: 40px;
-  height:100%;
-  width:300px;
-  min-width:300px;
+  height: 100%;
+  width: 300px;
+  min-width: 300px;
 }
-.sc4_content2_img{
+.sc4_content2_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
+  height: 168px;
   background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/gluQnLUHCAxDZyJrYkyMQh2H8yF.jpg);
 }
-.sc4_content2_img:hover{
-  transition:all 0.5s;
+.sc4_content2_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content2_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content2_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content2_txt>h3{
-  padding-top:20px;
-   margin:0;
- }
-
-
- .sc4_content3{ 
-
-  margin-left: 40px;
-  width:300px;
-  min-width:300px;
 }
-.sc4_content3_img{
+.sc4_content2_txt > h3 {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.sc4_content3 {
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+}
+.sc4_content3_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
-  background-image: url( https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/uDobm15VCxWW2MZX3CQey0L6XLj.jpg);
+  height: 168px;
+  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/uDobm15VCxWW2MZX3CQey0L6XLj.jpg);
 }
-.sc4_content3_img:hover{
-  transition:all 0.5s;
+.sc4_content3_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content3_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content3_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content3_txt>h3{
-  padding-top:20px;
-
-   margin:0;
- }
- .sc4_content4{ 
-
-  margin-left: 40px;
-  width:300px;
-  min-width:300px;
 }
-.sc4_content4_img{
+.sc4_content3_txt > h3 {
+  padding-top: 20px;
+
+  margin: 0;
+}
+.sc4_content4 {
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+}
+.sc4_content4_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
-  background-image: url( https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg);
+  height: 168px;
+  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg);
 }
-.sc4_content4_img:hover{
-  transition:all 0.5s;
+.sc4_content4_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content4_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content4_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content4_txt>h3{
-  padding-top:20px;
-
-   margin:0;
- }
- .sc4_content5{ 
-
-  margin-left: 40px;
-  width:300px;
-  min-width:300px;
-  
 }
-.sc4_content5_img{
+.sc4_content4_txt > h3 {
+  padding-top: 20px;
+
+  margin: 0;
+}
+.sc4_content5 {
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+}
+.sc4_content5_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
-  background-image: url(	https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/u6NTVBHWVpQ2KDQHVkjAxf9XMMe.jpg);
+  height: 168px;
+  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/u6NTVBHWVpQ2KDQHVkjAxf9XMMe.jpg);
 }
-.sc4_content5_img:hover{
-  transition:all 0.5s;
+.sc4_content5_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content5_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content5_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content5_txt>h3{
-  padding-top:20px;
-   margin:0;
- }
- .sc4_content6{ 
-
-  margin-left: 40px;
-  width:300px;
-  min-width:300px;
-  
 }
-.sc4_content6_img{
+.sc4_content5_txt > h3 {
+  padding-top: 20px;
+  margin: 0;
+}
+.sc4_content6 {
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+}
+.sc4_content6_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
-  background-image: url( https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg
-  );
+  height: 168px;
+  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg);
 }
-.sc4_content6_img:hover{
-  transition:all 0.5s;
+.sc4_content6_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content6_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content6_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content6_txt>h3{
-  padding-top:20px;
-   margin:0;
- }
- .sc4_content7{ 
-
-  margin-left: 40px;
-  width:300px;
-  min-width:300px;
-  
 }
-.sc4_content7_img{
+.sc4_content6_txt > h3 {
+  padding-top: 20px;
+  margin: 0;
+}
+.sc4_content7 {
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+}
+.sc4_content7_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
-  background-image: url( https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/9ijMGlJKqcslswWUzTEwScm82Gs.jpg
-  );
+  height: 168px;
+  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/9ijMGlJKqcslswWUzTEwScm82Gs.jpg);
 }
-.sc4_content7_img:hover{
-  transition:all 0.5s;
+.sc4_content7_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content7_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content7_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content7_txt>h3{
-  padding-top:20px;
-   margin:0;
- }
- .sc4_content8{ 
-
-  margin-left: 40px;
-  width:300px;
-  min-width:300px;
-  
 }
-.sc4_content8_img{
+.sc4_content7_txt > h3 {
+  padding-top: 20px;
+  margin: 0;
+}
+.sc4_content8 {
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+}
+.sc4_content8_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
+  height: 168px;
   background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg);
 }
-.sc4_content8_img:hover{
-  transition:all 0.5s;
+.sc4_content8_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content8_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content8_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content8_txt>h3{
-  padding-top:20px;
-   margin:0;
- }
- .sc4_content9{ 
-
-  margin-left: 40px;
-  width:300px;
-  min-width:300px;
-  
 }
-.sc4_content9_img{
+.sc4_content8_txt > h3 {
+  padding-top: 20px;
+  margin: 0;
+}
+.sc4_content9 {
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+}
+.sc4_content9_img {
   object-fit: contain;
   border-radius: 5px;
-  height:168px;
+  height: 168px;
   background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg);
 }
-.sc4_content9_img:hover{
-  transition:all 0.5s;
+.sc4_content9_img:hover {
+  transition: all 0.5s;
   transform: scale(1.1);
 }
-.sc4_content9_txt{ 
-  color:#fff;
-  display:flex;
+.sc4_content9_txt {
+  color: #fff;
+  display: flex;
   flex-direction: column;
   align-items: center;
- }
- .sc4_content9_txt>h3{
-  padding-top:20px;
-   margin:0;
- }
+}
+.sc4_content9_txt > h3 {
+  padding-top: 20px;
+  margin: 0;
+}
 
-
-
- .sc6{
-  width:1300px;
+.sc6 {
+  width: 1300px;
   height: 448px;
- 
 }
-.sc6_2{
-  box-sizing:border-box;
-  width:100%;
+.sc6_2 {
+  box-sizing: border-box;
+  width: 100%;
   height: 100%;
-
 }
-.sc6_3{
-  box-sizing:border-box;
-  width:100%;
+.sc6_3 {
+  box-sizing: border-box;
+  width: 100%;
   height: 100%;
-padding-top: 30px;
-   
+  padding-top: 30px;
 }
-.sc6_4{
-  box-sizing:border-box;
+.sc6_4 {
+  box-sizing: border-box;
 }
-    .sc6_header{    
-  display:flex;
-padding-left: 40px;
-padding-right: 40px;
+.sc6_header {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.sc6_header>h2{ 
-  margin:0;
+.sc6_header > h2 {
+  margin: 0;
   margin-right: 20px;
 }
 
-.sc6_header_b{
-  border:1px solid #032541;
-  border-radius: 30px; 
-  display:flex;
+.sc6_header_b {
+  border: 1px solid #032541;
+  border-radius: 30px;
+  display: flex;
 }
-.sc6_header_button{
-  
-  border-radius: 30px;  
+.sc6_header_button {
+  border-radius: 30px;
 }
-.sc6_header_button1{
-
-background: #032541;
-border-color: #032541;
-border-radius: 30px;
+.sc6_header_button1 {
+  background: #032541;
+  border-color: #032541;
+  border-radius: 30px;
 }
-.sc6_header_button2{
-
+.sc6_header_button2 {
 }
-.sc6_header_button1>h3{
+.sc6_header_button1 > h3 {
   background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-   margin:0;
+  margin: 0;
   padding: 4px 20px;
 }
-.sc6_header_button2>h3{
-  margin:0;
+.sc6_header_button2 > h3 {
+  margin: 0;
   padding: 4px 20px;
 }
-.sc6_header_button3>h3{
-  margin:0;
+.sc6_header_button3 > h3 {
+  margin: 0;
   padding: 4px 20px;
 }
-.sc6_header_button4>h3{
-  margin:0;
+.sc6_header_button4 > h3 {
+  margin: 0;
   padding: 4px 20px;
 }
 
-.sc6_content{
+.sc6_content {
   overflow-x: scroll;
   overflow-x: auto;
- width:100%;
- height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 .sc6_content::-webkit-scrollbar {
@@ -612,359 +557,332 @@ border-radius: 30px;
 .sc6_content::-webkit-scrollbar-thumb {
   background-color: #cfd3da;
   background-clip: padding-box;
-    border: 5px solid transparent;
+  border: 5px solid transparent;
   border-radius: 30px;
 }
 .sc6_content::-webkit-scrollbar-track {
-  background-color:white;
+  background-color: white;
 }
 
-
-
-.sc6_content_in{
+.sc6_content_in {
   padding-top: 20px;
   padding-bottom: 20px;
-  display:flex;
- flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
-.sc6_content_in1{
- 
-
+.sc6_content_in1 {
   width: 150px;
-  min-width:150px;
- 
+  min-width: 150px;
 }
 
-.in111_img{
-background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/8Q7Zxnxdn64nGrA1qklKNnFJ7QB.jpg	);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
-
-}
-.in111_img_content{
-  flex-wrap: wrap;
-  padding: 26px 10px 12px 10px;
-  height:100px;
-  width:100%;
-  box-sizing: border-box;
-}
-.in111_img_content>h2{
-  font-size: 18px;
-  padding:0;
-  margin:0;
-}
-
-
-
-
-.sc6_content_in2{
-  margin-left: 20px;
-  width: 150px;
-  min-width:150px;
-  
-}
-.in222_img{
-  background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
-}
-.in222_img_content{
-  flex-wrap: wrap;
-  padding: 26px 10px 12px 10px;
-  height:100px;
-  width:100%;
-  box-sizing: border-box;
-}
-.in222_img_content>h2{
-  font-size: 18px;
-  padding:0;
-  margin:0;
-}
-
-
-.sc6_content_in3{
-  margin-left: 20px;
-    width: 150px;
-    min-width:150px;
-  }
-  .in333_img{
-    background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/lvYWwQj89ioSk9WzhC1KEujmpWa.jpg);
+.in111_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/8Q7Zxnxdn64nGrA1qklKNnFJ7QB.jpg);
   background-size: cover;
   border-radius: 5%;
-  width:100%;
-  height:220px;
-  display:inline-block;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
   box-sizing: border-box;
-  }
-  .in333_img_content{
-    flex-wrap: wrap;
-    padding: 26px 10px 12px 10px;
-    height:100px;
-    width:100%;
-    box-sizing: border-box;
-  }
-  .in333_img_content>h2{
-    font-size: 18px;
-    padding:0;
-    margin:0;
-  }
-.sc6_content_in4{
-  margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-    
-    }
-    .in444_img{
-      background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/7iVwF5l0jkIkIOVSvHI6HM4gKU5.jpg);
-    background-size: cover;
-    border-radius: 5%;
-    width:100%;
-    height:220px;
-    display:inline-block;
-    box-sizing: border-box;
-    }
-    .in444_img_content{
-      flex-wrap: wrap;
-      padding: 26px 10px 12px 10px;
-      height:100px;
-      width:100%;
-      box-sizing: border-box;
-    }
-    .in444_img_content>h2{
-      font-size: 18px;
-      padding:0;
-      margin:0;
-    }
-
-.sc6_content_in5{
-      margin-left: 20px;
-          width: 150px;
-          min-width:150px;
-          height:100%;
-         
 }
-.in555_img{
-  background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/lxfllsQQ32gKglUxrM61WaFeNcy.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
-}
-.in555_img_content{
+.in111_img_content {
   flex-wrap: wrap;
   padding: 26px 10px 12px 10px;
-  height:100px;
-  width:100%;
+  height: 100px;
+  width: 100%;
   box-sizing: border-box;
 }
-.in555_img_content>h2{
+.in111_img_content > h2 {
   font-size: 18px;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-.sc6_content_in6{
+.sc6_content_in2 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
 }
-.in666_img{
-background-image:url(		https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in222_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in666_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in222_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in666_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in222_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
-.sc6_content_in7{
+.sc6_content_in3 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
 }
-.in777_img{
-background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/xo86KtpjsGZRuI3vF17aHxHNX3E.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in333_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/lvYWwQj89ioSk9WzhC1KEujmpWa.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in777_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in333_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in777_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in333_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
-
-.sc6_content_in8{
+.sc6_content_in4 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
 }
-.in888_img{
-background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in444_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/7iVwF5l0jkIkIOVSvHI6HM4gKU5.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in888_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in444_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in888_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in444_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
-.sc6_content_in9{
+.sc6_content_in5 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
 }
-.in999_img{
-background-image:url(		https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in555_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/lxfllsQQ32gKglUxrM61WaFeNcy.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in999_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in555_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in999_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in555_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
+.sc6_content_in6 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in666_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in666_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in666_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
 
+.sc6_content_in7 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in777_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/xo86KtpjsGZRuI3vF17aHxHNX3E.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in777_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in777_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
 
+.sc6_content_in8 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in888_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in888_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in888_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
 
+.sc6_content_in9 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in999_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in999_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in999_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
 
-.sc3{
-  width:1300px;
+.sc3 {
+  width: 1300px;
   height: 481px;
- 
 }
-.sc3_2{
+.sc3_2 {
   box-sizing: border-box;
-  width:100%;
+  width: 100%;
   height: 100%;
-
 }
-.sc3_3{
+.sc3_3 {
   box-sizing: border-box;
-  width:100%;
+  width: 100%;
   height: 100%;
-padding-top: 30px;
-  
+  padding-top: 30px;
 }
-.sc3_4{
+.sc3_4 {
   box-sizing: border-box;
   height: 100%;
 }
 
-    .sc3_header{    
-  display:flex;
-padding-left: 40px;
-padding-right: 40px;
+.sc3_header {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.sc3_header>h2{ 
-  margin:0;
+.sc3_header > h2 {
+  margin: 0;
   margin-right: 20px;
 }
 
-.sc3_header_b{
-  border:1px solid #032541;
-  border-radius: 30px; 
-  display:flex;
+.sc3_header_b {
+  border: 1px solid #032541;
+  border-radius: 30px;
+  display: flex;
 }
-.sc3_header_button{
+.sc3_header_button {
   border-color: #032541;
-  border-radius: 30px;  
+  border-radius: 30px;
 }
-.sc3_header_button1{
-background: #032541;
-border-color: #032541;
-border-radius: 30px;
+.sc3_header_button1 {
+  background: #032541;
+  border-color: #032541;
+  border-radius: 30px;
 }
-.sc3_header_button2{
-
+.sc3_header_button2 {
 }
-.sc3_header_button1>h3{
+.sc3_header_button1 > h3 {
   background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin:0;
+  margin: 0;
   padding: 4px 20px;
 }
-.sc3_header_button2>h3{
-  margin:0;
-  
+.sc3_header_button2 > h3 {
+  margin: 0;
+
   padding: 4px 20px;
 }
 
-.sc3_content{
+.sc3_content {
   overflow-x: scroll;
   overflow-x: auto;
- width:100%;
- height:400px;
-padding-top: 20px;
-
-
+  width: 100%;
+  height: 400px;
+  padding-top: 20px;
 }
 
 .sc3_content::-webkit-scrollbar {
@@ -973,875 +891,833 @@ padding-top: 20px;
 .sc3_content::-webkit-scrollbar-thumb {
   background-color: #cfd3da;
   background-clip: padding-box;
-    border: 5px solid transparent;
+  border: 5px solid transparent;
   border-radius: 30px;
 }
 .sc3_content::-webkit-scrollbar-track {
-  background-color:white;
+  background-color: white;
 }
 
-
-
-.sc3_content_in{
-  display:flex;
-  height:100%;
- flex-wrap: nowrap;
+.sc3_content_in {
+  display: flex;
+  height: 100%;
+  flex-wrap: nowrap;
 }
-.sc3_content_in1{
- 
-
+.sc3_content_in1 {
   width: 150px;
-  min-width:150px;
- 
+  min-width: 150px;
 }
 
-.in1_img{
-background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/vODOVn29fr0nLF9MVfpfKDcxuXF.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
-
-}
-.in1_img_content{
-  flex-wrap: wrap;
-  padding: 26px 10px 12px 10px;
-  height:100px;
-  width:100%;
-  box-sizing: border-box;
-}
-.in1_img_content>h2{
-  font-size: 18px;
-  padding:0;
-  margin:0;
-}
-
-
-
-
-.sc3_content_in2{
-  margin-left: 20px;
-  width: 150px;
-  min-width:150px;
-  
-}
-.in2_img{
-  background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/1gafYQCpDxtfIj7HYBNs4Z3m4oW.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
-}
-.in2_img_content{
-  flex-wrap: wrap;
-  padding: 26px 10px 12px 10px;
-  height:100px;
-  width:100%;
-  box-sizing: border-box;
-}
-.in2_img_content>h2{
-  font-size: 18px;
-  padding:0;
-  margin:0;
-}
-
-
-.sc3_content_in3{
-  margin-left: 20px;
-    width: 150px;
-    min-width:150px;
-  }
-  .in3_img{
-    background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/beJtpNbbNJpdhVWlRqmutM1q31m.jpg);
+.in1_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/vODOVn29fr0nLF9MVfpfKDcxuXF.jpg);
   background-size: cover;
   border-radius: 5%;
-  width:100%;
-  height:220px;
-  display:inline-block;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
   box-sizing: border-box;
-  }
-  .in3_img_content{
-    flex-wrap: wrap;
-    padding: 26px 10px 12px 10px;
-    height:100px;
-    width:100%;
-    box-sizing: border-box;
-  }
-  .in3_img_content>h2{
-    font-size: 18px;
-    padding:0;
-    margin:0;
-  }
-.sc3_content_in4{
-  margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-    
-    }
-    .in4_img{
-      background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/6wmNcHjXnBEhlAvsUUR6ytdLKHO.jpg);
-    background-size: cover;
-    border-radius: 5%;
-    width:100%;
-    height:220px;
-    display:inline-block;
-    box-sizing: border-box;
-    }
-    .in4_img_content{
-      flex-wrap: wrap;
-      padding: 26px 10px 12px 10px;
-      height:100px;
-      width:100%;
-      box-sizing: border-box;
-    }
-    .in4_img_content>h2{
-      font-size: 18px;
-      padding:0;
-      margin:0;
-    }
-
-.sc3_content_in5{
-      margin-left: 20px;
-          width: 150px;
-          min-width:150px;
-          height:100%;
-         
 }
-.in5_img{
-  background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/b6yJXwYAXgqJKNdOrEQxxbQ8oG4.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
-}
-.in5_img_content{
+.in1_img_content {
   flex-wrap: wrap;
   padding: 26px 10px 12px 10px;
-  height:100px;
-  width:100%;
+  height: 100px;
+  width: 100%;
   box-sizing: border-box;
 }
-.in5_img_content>h2{
+.in1_img_content > h2 {
   font-size: 18px;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-.sc3_content_in6{
+.sc3_content_in2 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
 }
-.in6_img{
-background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/yTfzOGKAKRqsvXToImspDlOGHaa.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in2_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/1gafYQCpDxtfIj7HYBNs4Z3m4oW.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in6_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in2_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in6_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in2_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
-.sc3_content_in7{
+.sc3_content_in3 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
 }
-.in7_img{
-background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/rhVrb6e2xX3VVDZNIfRIo0oQwZT.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in3_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/beJtpNbbNJpdhVWlRqmutM1q31m.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in7_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in3_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in7_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in3_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
-
-.sc3_content_in8{
+.sc3_content_in4 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
 }
-.in8_img{
-background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/kHiSfrIh5NDoVZDCcQhzq3KHcsB.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in4_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/6wmNcHjXnBEhlAvsUUR6ytdLKHO.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in8_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in4_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in8_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in4_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
-.sc3_content_in9{
+.sc3_content_in5 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
 }
-.in9_img{
-background-image:url(	https://www.themoviedb.org/t/p/w220_and_h330_face/vmvfQoLet0VRPIWsJJ0Ns7rhbWT.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in5_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/b6yJXwYAXgqJKNdOrEQxxbQ8oG4.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in9_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in5_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in9_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in5_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
-.sc3_content_in10{
+.sc3_content_in6 {
   margin-left: 20px;
-      width: 150px;
-      min-width:150px;
-      height:100%;
-     
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
 }
-.in10_img{
-background-image:url(https://www.themoviedb.org/t/p/w220_and_h330_face/uIWZB1lzxk6RGwzakM2lMnRah86.jpg);
-background-size: cover;
-border-radius: 5%;
-width:100%;
-height:220px;
-display:inline-block;
-box-sizing: border-box;
+.in6_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/yTfzOGKAKRqsvXToImspDlOGHaa.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
 }
-.in10_img_content{
-flex-wrap: wrap;
-padding: 26px 10px 12px 10px;
-height:100px;
-width:100%;
-box-sizing: border-box;
+.in6_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.in10_img_content>h2{
-font-size: 18px;
-padding:0;
-margin:0;
+.in6_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
-.sc7{
+.sc3_content_in7 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in7_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/rhVrb6e2xX3VVDZNIfRIo0oQwZT.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in7_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in7_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.sc3_content_in8 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in8_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/kHiSfrIh5NDoVZDCcQhzq3KHcsB.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in8_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in8_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.sc3_content_in9 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in9_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/vmvfQoLet0VRPIWsJJ0Ns7rhbWT.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in9_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in9_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.sc3_content_in10 {
+  margin-left: 20px;
+  width: 150px;
+  min-width: 150px;
+  height: 100%;
+}
+.in10_img {
+  background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/uIWZB1lzxk6RGwzakM2lMnRah86.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.in10_img_content {
+  flex-wrap: wrap;
+  padding: 26px 10px 12px 10px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.in10_img_content > h2 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.sc7 {
   box-sizing: border-box;
   background-size: cover;
-  width:1300px;
-  height:307px;
+  width: 1300px;
+  height: 307px;
   background-image: url(./images/vb.jpg);
 }
 
-.sc7_content{
-  
-  display:flex;
+.sc7_content {
+  display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding:30px;
-  height:100%;
-  width:100%;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
 }
-.sc7_title{
+.sc7_title {
   justify-content: flex-start;
-  color:#fff;
+  color: #fff;
   font-size: 30px;
   font-weight: bold;
 }
-.sc7_main{
-  color:#fff;
+.sc7_main {
+  color: #fff;
 }
-.sc7_txt{
+.sc7_txt {
   box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 10px;
-  display:flex;
+  display: flex;
   flex-direction: row;
-  height:200px;
+  height: 200px;
 }
-.sc7_txt1{
+.sc7_txt1 {
   padding-right: 20px;
-  width:70%;
+  width: 70%;
   font-size: 19px;
- 
 }
 
-.sc7_button>a{
+.sc7_button > a {
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  color:#fff;
+  color: #fff;
   font-style: none;
-  padding:8px;
-  border:1px solid blueviolet;
+  padding: 8px;
+  border: 1px solid blueviolet;
   border-radius: 5px;
   background-color: blueviolet;
 }
-.sc7_txt2{
-  color:#fff;
+.sc7_txt2 {
+  color: #fff;
 }
 
-.sc8{
+.sc8 {
   box-sizing: border-box;
-  height:478px;
-  width:1300px;
+  height: 478px;
+  width: 1300px;
   margin-bottom: 10px;
 }
-.sc8_1{
+.sc8_1 {
   box-sizing: border-box;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
-.sc8_2{
+.sc8_2 {
   box-sizing: border-box;
-  padding:40px;
-  height:100%;
-  
+  padding: 40px;
+  height: 100%;
 }
-.sc8_3{
+.sc8_3 {
   box-sizing: border-box;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  width:100%;
-   height:100%;
-  
+  width: 100%;
+  height: 100%;
 }
-.sc8_header{
-  display:flex;
+.sc8_header {
+  display: flex;
 }
-.sc8_header>h2{
+.sc8_header > h2 {
   padding-right: 20px;
-  margin:0;
+  margin: 0;
 }
-.sc8_header>div{
-  
-  display:flex;
+.sc8_header > div {
+  display: flex;
   flex-direction: column;
 }
-.sc8_header>div>p{
+.sc8_header > div > p {
   font-size: 0.9em;
-  display:flex;
-  margin:0;
+  display: flex;
+  margin: 0;
 }
-.span1{
-display:flex;
-justify-content: center;
-align-items: center;
-  background-color: #00e45f;
-  height:10px;
-  width:10px;
-  border-radius: 50%;
-  border:1px solid #00e45f;
-  margin-right: 5px;
-}
-.span2{
-  display:flex;
+.span1 {
+  display: flex;
   justify-content: center;
   align-items: center;
-    background-color: #e45000;
-    height:10px;
-    width:10px;
-    border-radius: 50%;
-    border:1px solid #e45000;
-    margin-right: 5px;
-  }
-
-.sc8_main{
-  padding-top: 20px;
-  height:100%;
- box-sizing: border-box;
+  background-color: #00e45f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #00e45f;
+  margin-right: 5px;
 }
-.sc8_ol{
-  padding:0;
-  
+.span2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e45000;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #e45000;
+  margin-right: 5px;
+}
+
+.sc8_main {
+  padding-top: 20px;
+  height: 100%;
   box-sizing: border-box;
-  display:flex;
+}
+.sc8_ol {
+  padding: 0;
+
+  box-sizing: border-box;
+  display: flex;
   flex-wrap: wrap;
 }
-.sc8_ol>li{
- display:flex;
- width:50%;
- margin-bottom: 15px;
- 
+.sc8_ol > li {
+  display: flex;
+  width: 50%;
+  margin-bottom: 15px;
 }
-.circle1{
-  height:56px;
-  width:56px;
+.circle1 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   background-color: #61dafb;
- 
+
   margin-right: 10px;
 }
-.sc8_text1{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text1 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text1>h2{
-  margin:0;
+.sc8_text1 > h2 {
+  margin: 0;
 }
-.text1_line1{
-  display:flex;
+.text1_line1 {
+  display: flex;
 }
-.text1_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text1_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text1_line1>div{
-  width:50px;
+.text1_line1 > div {
+  width: 50px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text1_line2{
-  display:flex;
+.text1_line2 {
+  display: flex;
 }
-.text1_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text1_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text1_line2>div{
-  width:450px;
+.text1_line2 > div {
+  width: 450px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
 
-.circle2{
+.circle2 {
   margin-right: 10px;
-  height:56px;
-  width:56px;
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   background-color: #b76d45;
 }
-.sc8_text2{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text2 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text2>h2{
-  margin:0;
+.sc8_text2 > h2 {
+  margin: 0;
 }
-.text2_line1{
-  display:flex;
+.text2_line1 {
+  display: flex;
 }
-.text2_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text2_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text2_line1>div{
-  width:100px;
+.text2_line1 > div {
+  width: 100px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
-  
+
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text2_line2{
-  display:flex;
+.text2_line2 {
+  display: flex;
 }
-.text2_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text2_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text2_line2>div{
-  width:150px;
+.text2_line2 > div {
+  width: 150px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
 
-
-
-.circle3{
-  height:56px;
-  width:56px;
+.circle3 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   background-image: url(https://www.gravatar.com/avatar/3af6511cf44a709e6ae5b612903c846c.jpg?s=64);
   margin-right: 10px;
-
 }
-.sc8_text3{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text3 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text3>h2{
-  margin:0;
+.sc8_text3 > h2 {
+  margin: 0;
 }
-.text3_line1{
-  display:flex;
+.text3_line1 {
+  display: flex;
 }
-.text3_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text3_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text3_line1>div{
-  width:250px;
+.text3_line1 > div {
+  width: 250px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text3_line2{
-  display:flex;
+.text3_line2 {
+  display: flex;
 }
-.text3_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text3_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text3_line2>div{
-  width:120px;
+.text3_line2 > div {
+  width: 120px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.circle4{
-  height:56px;
-  width:56px;
+.circle4 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
- background-color: aquamarine;
+  background-color: aquamarine;
   margin-right: 10px;
-
 }
-.sc8_text4{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text4 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text4>h2{
-  margin:0;
+.sc8_text4 > h2 {
+  margin: 0;
 }
-.text4_line1{
-  display:flex;
+.text4_line1 {
+  display: flex;
 }
-.text4_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text4_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text4_line1>div{
-  width:200px;
+.text4_line1 > div {
+  width: 200px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text4_line2{
-  display:flex;
+.text4_line2 {
+  display: flex;
 }
-.text4_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text4_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text4_line2>div{
-  width:150px;
+.text4_line2 > div {
+  width: 150px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.circle5{
-  height:56px;
-  width:56px;
+.circle5 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
- background-image: url(https://www.themoviedb.org/t/p/w64_and_h64_face/uJngdDd0WzNYGwlmBGYrDxp1akP.jpg);
+  background-image: url(https://www.themoviedb.org/t/p/w64_and_h64_face/uJngdDd0WzNYGwlmBGYrDxp1akP.jpg);
   margin-right: 10px;
-
 }
-.sc8_text5{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text5 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text5>h2{
-  margin:0;
+.sc8_text5 > h2 {
+  margin: 0;
 }
-.text5_line1{
-  display:flex;
+.text5_line1 {
+  display: flex;
 }
-.text5_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text5_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text5_line1>div{
-  width:450px;
+.text5_line1 > div {
+  width: 450px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text5_line2{
-  display:flex;
+.text5_line2 {
+  display: flex;
 }
-.text5_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text5_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text5_line2>div{
-  width:100px;
+.text5_line2 > div {
+  width: 100px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.circle6{
-  height:56px;
-  width:56px;
+.circle6 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   background-color: rgba(8, 8, 233, 0.61);
   margin-right: 10px;
-
 }
-.sc8_text6{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text6 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text6>h2{
-  margin:0;
+.sc8_text6 > h2 {
+  margin: 0;
 }
-.text6_line1{
-  display:flex;
+.text6_line1 {
+  display: flex;
 }
-.text6_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text6_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text6_line1>div{
-  width:200px;
+.text6_line1 > div {
+  width: 200px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text6_line2{
-  display:flex;
+.text6_line2 {
+  display: flex;
 }
-.text6_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text6_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text6_line2>div{
-  width:150px;
+.text6_line2 > div {
+  width: 150px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
 
-.circle7{
-  height:56px;
-  width:56px;
+.circle7 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   background-image: url(https://www.gravatar.com/avatar/a925d7068c9402c1a988e39611f47bfe.jpg?s=64);
   margin-right: 10px;
-
 }
-.sc8_text7{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text7 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text7>h2{
-  margin:0;
+.sc8_text7 > h2 {
+  margin: 0;
 }
-.text7_line1{
-  display:flex;
+.text7_line1 {
+  display: flex;
 }
-.text7_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text7_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text7_line1>div{
-  width:120px;
+.text7_line1 > div {
+  width: 120px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text7_line2{
-  display:flex;
+.text7_line2 {
+  display: flex;
 }
-.text7_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text7_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text7_line2>div{
-  width:140px;
+.text7_line2 > div {
+  width: 140px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.circle8{
-  height:56px;
-  width:56px;
+.circle8 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
- background-color: rgb(17, 225, 17);
+  background-color: rgb(17, 225, 17);
   margin-right: 10px;
-
 }
-.sc8_text8{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text8 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text8>h2{
-  margin:0;
+.sc8_text8 > h2 {
+  margin: 0;
 }
-.text8_line1{
-  display:flex;
+.text8_line1 {
+  display: flex;
 }
-.text8_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text8_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text8_line1>div{
-  width:110px;
+.text8_line1 > div {
+  width: 110px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text8_line2{
-  display:flex;
+.text8_line2 {
+  display: flex;
 }
-.text8_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text8_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text8_line2>div{
-  width:130px;
+.text8_line2 > div {
+  width: 130px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.circle9{
-  height:56px;
-  width:56px;
+.circle9 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
- background-color: rgb(32, 210, 210);
+  background-color: rgb(32, 210, 210);
   margin-right: 10px;
-
 }
-.sc8_text9{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text9 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text9>h2{
-  margin:0;
+.sc8_text9 > h2 {
+  margin: 0;
 }
-.text9_line1{
-  display:flex;
+.text9_line1 {
+  display: flex;
 }
-.text9_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text9_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text9_line1>div{
-  width:100px;
+.text9_line1 > div {
+  width: 100px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text9_line2{
-  display:flex;
+.text9_line2 {
+  display: flex;
 }
-.text9_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text9_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text9_line2>div{
-  width:110px;
+.text9_line2 > div {
+  width: 110px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -1852,110 +1728,101 @@ align-items: center;
   pointer-events: none;
 }
 
-.circle10{
-  height:56px;
-  width:56px;
+.circle10 {
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   background-image: url(https://www.gravatar.com/avatar/cb76d8c304688b3180098aecf97ce600.jpg?s=64);
   margin-right: 10px;
-
 }
-.sc8_text10{
-  
-  display:flex;
- flex-direction: column;
+.sc8_text10 {
+  display: flex;
+  flex-direction: column;
 }
-.sc8_text10>h2{
-  margin:0;
+.sc8_text10 > h2 {
+  margin: 0;
 }
-.text10_line1{
-  display:flex;
+.text10_line1 {
+  display: flex;
 }
-.text10_line1>h4{
-  font-size:0.1em;
-  margin:0;
+.text10_line1 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
-.text10_line1>div{
-  width:80px;
+.text10_line1 > div {
+  width: 80px;
   border-radius: 5px;
-  border:1px solid #00e45f;
+  border: 1px solid #00e45f;
   background-color: #00e45f;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-.text10_line2{
-  display:flex;
+.text10_line2 {
+  display: flex;
 }
-.text10_line2>h4{
-  font-size:0.1em;
-  margin:0;
+.text10_line2 > h4 {
+  font-size: 0.1em;
+  margin: 0;
 }
 
-.text10_line2>div{
-  width:90px;
+.text10_line2 > div {
+  width: 90px;
   border-radius: 5px;
-  border:1px solid #e45000;
+  border: 1px solid #e45000;
   background-color: #e45000;
   margin-right: 5px;
   margin-bottom: 5px;
 }
 
-
-
-.sc9{
+.sc9 {
   box-sizing: border-box;
-  height:320px;
-  width:100%;
+  height: 320px;
+  width: 100%;
   background-color: #0c2d61;
 }
-.sc9_nav{
-  margin:40px;
- display:flex;  
- align-content: center;
- justify-content: center;
+.sc9_nav {
+  margin: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-.sc9_nav>div{
+.sc9_nav > div {
   padding-right: 20px;
 }
-.sc9_nav>div>ul{
-  padding:0;
-  color:#fff;
+.sc9_nav > div > ul {
+  padding: 0;
+  color: #fff;
   list-style: none;
 }
-.sc9_nav>div>h2{
-  color:#fff;
-
+.sc9_nav > div > h2 {
+  color: #fff;
 }
-.sc9_logo{
-  position:relative;
+.sc9_logo {
+  position: relative;
   margin-right: 40px;
- 
 }
-.sc9_l{
-  position:absolute;
+.sc9_l {
+  position: absolute;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/89/Tmdb.new.logo.svg);
-  height:94px;
-  width:130px;
-
+  height: 94px;
+  width: 130px;
 }
 
-.sc9_nav>.sc9_logo>a{
+.sc9_nav > .sc9_logo > a {
   background-color: #fff;
 }
-.sc9_b{
-  position:relative;
-  top:150px;
+.sc9_b {
+  position: relative;
+  top: 150px;
   font-size: 18px;
-border-radius: 5px;
-background-color: #fff;
-padding:8px 18px;
-border: 1px solid #fff;
-background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px 18px;
+  border: 1px solid #fff;
+  background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
