@@ -42,7 +42,8 @@
 .discover {
   position: relative;
   width: 1300px;
-  height: 360px;
+  margin-top: 40px;
+  height: 320px;
   background-image: url("./images/movie.jpg");
 }
 .wrapper {
