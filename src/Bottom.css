@@ -1,0 +1,49 @@
+.sc9 {
+  box-sizing: border-box;
+  height: 320px;
+  width: 100%;
+  background-color: #0c2d61;
+}
+.sc9_nav {
+  margin: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.sc9_nav > div {
+  padding-right: 20px;
+}
+.sc9_nav > div > ul {
+  padding: 0;
+  color: #fff;
+  list-style: none;
+}
+.sc9_nav > div > h2 {
+  color: #fff;
+}
+.sc9_logo {
+  position: relative;
+  margin-right: 40px;
+}
+.sc9_l {
+  position: absolute;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/89/Tmdb.new.logo.svg);
+  height: 94px;
+  width: 130px;
+}
+
+.sc9_nav > .sc9_logo > a {
+  background-color: #fff;
+}
+.sc9_b {
+  position: relative;
+  top: 150px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 8px 18px;
+  border: 1px solid #fff;
+  background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,53 @@
+.sc7 {
+  box-sizing: border-box;
+  background-size: cover;
+  width: 1300px;
+  height: 307px;
+  background-image: url(./images/vb.jpg);
+}
+
+.sc7_content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+}
+.sc7_title {
+  justify-content: flex-start;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.sc7_main {
+  color: #fff;
+}
+.sc7_txt {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+.sc7_txt1 {
+  padding-right: 20px;
+  width: 70%;
+  font-size: 19px;
+}
+
+.sc7_button > a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  font-style: none;
+  padding: 8px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  background-color: blueviolet;
+}
+.sc7_txt2 {
+  color: #fff;
+}
