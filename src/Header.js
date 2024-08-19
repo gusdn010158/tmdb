@@ -1,18 +1,6 @@
 import React from "react";
 import "./Header.css";
 function Header() {
-  let lastScroll = document.documentElement.scrollTop || 0;
-  document.addEventListener("scroll", function () {
-    let scrollTop = document.documentElement.scrollTop;
-
-    if (scrollTop > lastScroll) {
-      document.getElementsByClassName("h").classList.add("tada");
-    } else {
-      document.getElementsByClassName("h").classList.remove("tada");
-    }
-    lastScroll = scrollTop;
-  });
-
   return (
     <header className="h">
       <div className="c">
