@@ -87,9 +87,12 @@
 }
 .f2 {
   list-style: none;
-
+  font-size: 12px;
+  padding: 5px;
   border-radius: 5px;
   border: 1px solid #fff;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 60px;
 }

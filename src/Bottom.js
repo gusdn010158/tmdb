@@ -1,6 +1,32 @@
 import React from "react";
 import "./Bottom.css";
-function Bottom(props) {
+
+function Bottom() {
+  const sections = [
+    {
+      title: "THE BASICS",
+      links: [
+        "TMDB에 대해",
+        "문의 하기",
+        "Support Forums",
+        "API",
+        "System Status",
+      ],
+    },
+    {
+      title: "참여하기",
+      links: ["기여 지침서", "새 영화 추가", "새 TV 프로그램 추가"],
+    },
+    {
+      title: "커뮤니티",
+      links: ["가이드 라인", "토론 내역", "기여 랭킹", "Twitter"],
+    },
+    {
+      title: "법적 사항",
+      links: ["서비스 이용약관", "API Terms of Use", "개인정보약관"],
+    },
+  ];
+
   return (
     <section className="sc9">
       <nav className="sc9_nav">
@@ -10,41 +36,16 @@ function Bottom(props) {
             커뮤니티 참여
           </a>
         </div>
-        <div>
-          <h2>THE BASICS</h2>
-          <ul>
-            <li>TMDB에 대해</li>
-            <li>문의 하기</li>
-            <li>Support Forums</li>
-            <li>API</li>
-            <li>System Status</li>
-          </ul>
-        </div>
-        <div>
-          <h2>참여하기</h2>
-          <ul>
-            <li>기여 지침서</li>
-            <li>새 영화 추가</li>
-            <li>새 TV 프로그램 추가</li>
-          </ul>
-        </div>
-        <div>
-          <h2>커뮤니티</h2>
-          <ul>
-            <li>가이드 라인</li>
-            <li>토론 내역</li>
-            <li>기여 랭킹 </li>
-            <li>Twitter</li>
-          </ul>
-        </div>
-        <div>
-          <h2>법적 사항</h2>
-          <ul>
-            <li>서비스 이용약관</li>
-            <li>API Terms of Use</li>
-            <li>개인정보약관 </li>
-          </ul>
-        </div>
+        {sections.map((section, index) => (
+          <div key={index}>
+            <h2>{section.title}</h2>
+            <ul>
+              {section.links.map((link, i) => (
+                <li key={i}>{link}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </nav>
     </section>
   );
