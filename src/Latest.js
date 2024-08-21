@@ -1,6 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Latest.css";
-function Latest(props) {
+
+function Latest() {
+  const [latestItems] = useState([
+    {
+      id: 1,
+      title: "트레이닝 데이",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg",
+    },
+    {
+      id: 2,
+      title: "분노의 13번가",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/gluQnLUHCAxDZyJrYkyMQh2H8yF.jpg",
+    },
+    {
+      id: 3,
+      title: "사진사의 여자",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/uDobm15VCxWW2MZX3CQey0L6XLj.jpg",
+    },
+    {
+      id: 4,
+      title: "코브라 카이",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg",
+    },
+    {
+      id: 5,
+      title: "괴롭히지마요 나가토로양",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/u6NTVBHWVpQ2KDQHVkjAxf9XMMe.jpg",
+    },
+    {
+      id: 6,
+      title: "라이즈 오브 더 풋솔져",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg",
+    },
+    {
+      id: 7,
+      title: "만달로리안",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/9ijMGlJKqcslswWUzTEwScm82Gs.jpg",
+    },
+    {
+      id: 8,
+      title: "웬즈데이",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+    },
+    {
+      id: 9,
+      title: "사랑의 블랙홀",
+      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg",
+    },
+  ]);
+
   return (
     <section className="sc4">
       <div className="sc4_3">
@@ -8,83 +57,31 @@ function Latest(props) {
           <div className="sc4_header">
             <h2>최신 예고편</h2>
             <div className="sc4_s">
-              <div className="sc4_sa">
+              <div className="sc4_a">
                 <h3>스트리밍</h3>
               </div>
-              <div className="sc4_sb">
+              <div className="sc4_a">
                 <h3>TV</h3>
               </div>
-              <div className="sc4_sc">
-                <h3>대여</h3>{" "}
+              <div className="sc4_a">
+                <h3>대여</h3>
               </div>
-              <div className="sc4_sd">
+              <div className="sc4_a">
                 <h3>극장</h3>
               </div>
             </div>
           </div>
           <div className="sc4_content">
             <div className="sc4_content_in">
-              <div className="sc4_content1">
-                <div className="sc4_content1_img"></div>
-                <div className="sc4_content1_txt">
-                  <h3>트레이닝 데이</h3>
-                  설명
+              {latestItems.map((item) => (
+                <div key={item.id} className="sc4_content1">
+                  <img className="sc4_content1_img" alt="img" src={item.img} />
+                  <div className="sc4_content1_txt">
+                    <h3>{item.title}</h3>
+                    설명
+                  </div>
                 </div>
-              </div>
-              <div className="sc4_content2">
-                <div className="sc4_content2_img"></div>
-                <div className="sc4_content2_txt">
-                  <h3>분노의 13번가</h3>
-                  설명
-                </div>
-              </div>
-              <div className="sc4_content3">
-                <div className="sc4_content3_img"></div>
-                <div className="sc4_content3_txt">
-                  <h3>사진사의 여자</h3> 설명
-                </div>
-              </div>
-              <div className="sc4_content4">
-                <div className="sc4_content4_img"></div>
-                <div className="sc4_content4_txt">
-                  <h3>코브라 카이</h3>
-                  설명
-                </div>
-              </div>
-              <div className="sc4_content5">
-                <div className="sc4_content5_img"></div>
-                <div className="sc4_content5_txt">
-                  <h3>괴롭히지마요 나가토로양</h3>설명
-                </div>
-              </div>
-              <div className="sc4_content6">
-                <div className="sc4_content6_img"></div>
-                <div className="sc4_content6_txt">
-                  <h3>라이즈 오브 더 풋솔져</h3>
-                  설명
-                </div>
-              </div>
-              <div className="sc4_content7">
-                <div className="sc4_content7_img"></div>
-                <div className="sc4_content7_txt">
-                  <h3>만달로리안</h3>
-                  설명
-                </div>
-              </div>
-              <div className="sc4_content8">
-                <div className="sc4_content8_img"></div>
-                <div className="sc4_content8_txt">
-                  <h3>웬즈데이</h3>
-                  설명
-                </div>
-              </div>
-              <div className="sc4_content9">
-                <div className="sc4_content9_img"></div>
-                <div className="sc4_content9_txt">
-                  <h3>사랑의 블랙홀</h3>
-                  설명
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

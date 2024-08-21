@@ -8,7 +8,6 @@
     rgba(3, 37, 65, 0.75)
   );
   background-blend-mode: multiply;
-  /* filter: drop-shadow(0 0 0 rgb(8, 8, 36)); */
 }
 
 .sc4_3 {
@@ -38,30 +37,16 @@
 
   align-items: center;
 }
-.sc4_sa {
+.sc4_a {
   border-color: #032541;
   border-radius: 30px;
 }
-.sc4_sa > h3 {
+.sc4_a > h3 {
   padding: 4px 15px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.sc4_sb > h3 {
-  padding: 4px 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.sc4_sc > h3 {
-  padding: 4px 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.sc4_sd > h3 {
-  padding: 4px 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 .sc4_content {
   height: 250px;
   padding-top: 40px;
@@ -98,7 +83,6 @@
   height: 168px;
   width: 100%;
   background-size: cover;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg);
 }
 .sc4_content1_img:hover {
   transition: all 0.5s;
@@ -116,211 +100,6 @@
   align-items: center;
 }
 .sc4_content1_txt > h3 {
-  padding-top: 20px;
-  margin: 0;
-}
-
-.sc4_content2 {
-  margin-left: 40px;
-  height: 100%;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content2_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/gluQnLUHCAxDZyJrYkyMQh2H8yF.jpg);
-}
-.sc4_content2_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content2_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content2_txt > h3 {
-  padding-top: 20px;
-  margin: 0;
-}
-
-.sc4_content3 {
-  margin-left: 40px;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content3_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/uDobm15VCxWW2MZX3CQey0L6XLj.jpg);
-}
-.sc4_content3_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content3_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content3_txt > h3 {
-  padding-top: 20px;
-
-  margin: 0;
-}
-.sc4_content4 {
-  margin-left: 40px;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content4_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg);
-}
-.sc4_content4_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content4_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content4_txt > h3 {
-  padding-top: 20px;
-
-  margin: 0;
-}
-.sc4_content5 {
-  margin-left: 40px;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content5_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/u6NTVBHWVpQ2KDQHVkjAxf9XMMe.jpg);
-}
-.sc4_content5_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content5_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content5_txt > h3 {
-  padding-top: 20px;
-  margin: 0;
-}
-.sc4_content6 {
-  margin-left: 40px;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content6_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg);
-}
-.sc4_content6_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content6_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content6_txt > h3 {
-  padding-top: 20px;
-  margin: 0;
-}
-.sc4_content7 {
-  margin-left: 40px;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content7_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/9ijMGlJKqcslswWUzTEwScm82Gs.jpg);
-}
-.sc4_content7_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content7_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content7_txt > h3 {
-  padding-top: 20px;
-  margin: 0;
-}
-.sc4_content8 {
-  margin-left: 40px;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content8_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg);
-}
-.sc4_content8_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content8_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content8_txt > h3 {
-  padding-top: 20px;
-  margin: 0;
-}
-.sc4_content9 {
-  margin-left: 40px;
-  width: 300px;
-  min-width: 300px;
-}
-.sc4_content9_img {
-  object-fit: contain;
-  border-radius: 5px;
-  height: 168px;
-  background-image: url(https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg);
-}
-.sc4_content9_img:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-.sc4_content9_txt {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sc4_content9_txt > h3 {
   padding-top: 20px;
   margin: 0;
 }
