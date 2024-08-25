@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Say.css";
+import Section from "./Section";
 
 function Say() {
   const [isToday, setIsToday] = useState(true);
@@ -8,7 +9,7 @@ function Say() {
     setIsToday(!isToday);
   };
 
-  const trendingItems = [
+  const [trendingItems] = useState([
     {
       id: 1,
       title: "라스트 오브 어스",
@@ -69,7 +70,7 @@ function Say() {
       date: "12월 23, 2022",
       img: "https://www.themoviedb.org/t/p/w220_and_h330_face/hnwq7IbbmBVLGaXcdoTiEk4Z63q.jpg",
     },
-  ];
+  ]);
 
   return (
     <section className="sc2">
@@ -97,12 +98,7 @@ function Say() {
             <div className="sc2_content">
               <div className="sc2_content_in">
                 {trendingItems.map((item) => (
-                  <TrendingItem
-                    key={item.id}
-                    title={item.title}
-                    date={item.date}
-                    img={item.img}
-                  />
+                  <Section img={item.img} title={item.title} date={item.date} />
                 ))}
               </div>
             </div>
@@ -112,17 +108,4 @@ function Say() {
     </section>
   );
 }
-
-function TrendingItem({ title, date, img }) {
-  return (
-    <div className="sc2_content_item">
-      <img className="img_img" src={img} alt={title} />
-      <div className="img_content">
-        <h2>{title}</h2>
-        {date}
-      </div>
-    </div>
-  );
-}
-
 export default Say;

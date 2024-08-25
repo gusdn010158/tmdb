@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Popular.css";
-
+import Section from "./Section";
 function Popular() {
   const [popular] = useState([
     {
@@ -86,13 +86,7 @@ function Popular() {
             <div className="sc6_content">
               <div className="sc6_content_in">
                 {popular.map((item) => (
-                  <div key={item.id} className="sc6_content_in1">
-                    <img className="in111_img" alt="img" src={item.img} />
-                    <div className="in111_img_content">
-                      <h2>{item.title}</h2>
-                      {item.date}
-                    </div>
-                  </div>
+                  <Section img={item.img} title={item.title} date={item.date} />
                 ))}
               </div>
             </div>

@@ -37,13 +37,35 @@
   border-color: #032541;
   border-radius: 30px;
 }
-.sc3_header_button1 {
+
+.sc3_header_button1,
+.sc3_header_button2 {
   background: #032541;
   border-color: #032541;
   border-radius: 30px;
+  cursor: pointer; /* 버튼 위에 마우스를 올리면 포인터 커서로 변경 */
 }
-.sc3_header_button2 {
+
+.sc3_header_button1.active {
+  background: #032541; /* 선택된 상태에서 영화 버튼의 배경색 */
+  color: white; /* 선택된 상태에서 텍스트 색상 */
 }
+
+.sc3_header_button2.active {
+  background: #032541; /* 선택된 상태에서 TV 버튼의 배경색 */
+  color: white; /* 선택된 상태에서 텍스트 색상 */
+}
+
+.sc3_header_button1:not(.active) {
+  background: white; /* 선택되지 않은 상태에서의 배경색 */
+  color: black; /* 선택되지 않은 상태에서 텍스트 색상 */
+}
+
+.sc3_header_button2:not(.active) {
+  background: white; /* 선택되지 않은 상태에서의 배경색 */
+  color: black; /* 선택되지 않은 상태에서 텍스트 색상 */
+}
+
 .sc3_header_button1 > h3 {
   background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
   -webkit-background-clip: text;
