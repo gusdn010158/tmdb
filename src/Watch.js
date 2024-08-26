@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import "./Watch.css";
 import Section from "./Section";
+import Togglebtn from "./Togglebtn";
 function Watch(props) {
-  const [selected, setSelected] = useState("movie"); // 초기 상태는 'movie'로 설정
-
-  const handleClick = (type) => {
-    setSelected(type); // 클릭한 버튼의 타입으로 상태 변경
-  };
   const [watching] = useState([
     {
       id: "1",
@@ -77,26 +73,8 @@ function Watch(props) {
           <div className="sc3_4">
             <div className="sc3_header">
               <h2>Free To Watch</h2>
-              <div className="sc3_header_button">
-                <div className="sc3_header_b">
-                  <div
-                    className={`sc3_header_button1 ${
-                      selected === "movie" ? "active" : ""
-                    }`}
-                    onClick={() => handleClick("movie")}
-                  >
-                    <h3>영화</h3>
-                  </div>
-                  <div
-                    className={`sc3_header_button2 ${
-                      selected === "tv" ? "active" : ""
-                    }`}
-                    onClick={() => handleClick("tv")}
-                  >
-                    <h3>TV</h3>
-                  </div>
-                </div>
-              </div>
+
+              <Togglebtn title1="영화" title2="TV" />
             </div>
             <div className="sc3_content">
               <div className="sc3_content_in">

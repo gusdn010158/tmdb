@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import "./Say.css";
 import Section from "./Section";
-
+import Togglebtn from "./Togglebtn";
 function Say() {
-  const [isToday, setIsToday] = useState(true);
-
-  const Toggle = () => {
-    setIsToday(!isToday);
-  };
-
   const [trendingItems] = useState([
     {
       id: 1,
@@ -79,20 +73,7 @@ function Say() {
           <div className="sc2_4">
             <div className="sc2_header">
               <h2>트렌딩</h2>
-              <div className="sc2_header_button">
-                <div className="sc2_header_b">
-                  <div className="sc2_header_button1" onClick={Toggle}>
-                    <h3>
-                      <a href="/">{isToday ? "오늘" : "이번 주"}</a>
-                    </h3>
-                  </div>
-                  <div className="sc2_header_button2">
-                    <h3>
-                      <a href="/">이번 주</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
+              <Togglebtn title1="오늘" title2="이번주" />
             </div>
 
             <div className="sc2_content">

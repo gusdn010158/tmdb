@@ -1,18 +1,22 @@
+/* 기존 스타일 설정 유지 */
 .sc3 {
   width: 1300px;
   height: 481px;
 }
+
 .sc3_2 {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
 }
+
 .sc3_3 {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding-top: 30px;
 }
+
 .sc3_4 {
   box-sizing: border-box;
   height: 100%;
@@ -23,60 +27,10 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .sc3_header > h2 {
   margin: 0;
   margin-right: 20px;
-}
-
-.sc3_header_b {
-  border: 1px solid #032541;
-  border-radius: 30px;
-  display: flex;
-}
-.sc3_header_button {
-  border-color: #032541;
-  border-radius: 30px;
-}
-
-.sc3_header_button1,
-.sc3_header_button2 {
-  background: #032541;
-  border-color: #032541;
-  border-radius: 30px;
-  cursor: pointer; /* 버튼 위에 마우스를 올리면 포인터 커서로 변경 */
-}
-
-.sc3_header_button1.active {
-  background: #032541; /* 선택된 상태에서 영화 버튼의 배경색 */
-  color: white; /* 선택된 상태에서 텍스트 색상 */
-}
-
-.sc3_header_button2.active {
-  background: #032541; /* 선택된 상태에서 TV 버튼의 배경색 */
-  color: white; /* 선택된 상태에서 텍스트 색상 */
-}
-
-.sc3_header_button1:not(.active) {
-  background: white; /* 선택되지 않은 상태에서의 배경색 */
-  color: black; /* 선택되지 않은 상태에서 텍스트 색상 */
-}
-
-.sc3_header_button2:not(.active) {
-  background: white; /* 선택되지 않은 상태에서의 배경색 */
-  color: black; /* 선택되지 않은 상태에서 텍스트 색상 */
-}
-
-.sc3_header_button1 > h3 {
-  background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
-  padding: 4px 20px;
-}
-.sc3_header_button2 > h3 {
-  margin: 0;
-
-  padding: 4px 20px;
 }
 
 .sc3_content {
@@ -90,12 +44,14 @@
 .sc3_content::-webkit-scrollbar {
   width: 10px;
 }
+
 .sc3_content::-webkit-scrollbar-thumb {
   background-color: #cfd3da;
   background-clip: padding-box;
   border: 5px solid transparent;
   border-radius: 30px;
 }
+
 .sc3_content::-webkit-scrollbar-track {
   background-color: white;
 }
@@ -104,30 +60,4 @@
   display: flex;
   height: 100%;
   flex-wrap: nowrap;
-}
-.sc3_content_in1 {
-  width: 150px;
-  min-width: 150px;
-  padding-left: 20px;
-}
-
-.in1_img {
-  background-size: cover;
-  border-radius: 5%;
-  width: 100%;
-  height: 220px;
-  display: inline-block;
-  box-sizing: border-box;
-}
-.in1_img_content {
-  flex-wrap: wrap;
-  padding: 26px 10px 12px 10px;
-  height: 100px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.in1_img_content > h2 {
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
 }
