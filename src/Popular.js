@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "./Popular.css";
 import Section from "./Section";
+import Togglebtn from "./Togglebtn";
 function Popular() {
+  const [selectedCategory, setSelectedCategory] = useState("스트리밍");
+
+  const handleToggle = (category) => {
+    setSelectedCategory(category);
+    // 여기에서 카테고리 변경에 따른 추가 작업을 수행할 수 있습니다.
+  };
   const [popular] = useState([
     {
       id: 1,
@@ -66,22 +73,10 @@ function Popular() {
           <div className="sc6_4">
             <div className="sc6_header">
               <h2>What's Popular</h2>
-              <div className="sc6_header_button">
-                <div className="sc6_header_b">
-                  <div className="sc6_header_button1">
-                    <h3>스트리밍</h3>
-                  </div>
-                  <div className="sc6_header_button2">
-                    <h3>TV</h3>
-                  </div>
-                  <div className="sc6_header_button3">
-                    <h3>대여</h3>
-                  </div>
-                  <div className="sc6_header_button4">
-                    <h3>극장</h3>
-                  </div>
-                </div>
-              </div>
+              <Togglebtn
+                titles={["스트리밍", "TV", "대여", "극장"]}
+                onToggle={handleToggle}
+              />
             </div>
             <div className="sc6_content">
               <div className="sc6_content_in">

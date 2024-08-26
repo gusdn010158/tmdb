@@ -3,6 +3,12 @@ import "./Watch.css";
 import Section from "./Section";
 import Togglebtn from "./Togglebtn";
 function Watch(props) {
+  const [selectedCategory, setSelectedCategory] = useState("스트리밍");
+
+  const handleToggle = (category) => {
+    setSelectedCategory(category);
+    // 여기에서 카테고리 변경에 따른 추가 작업을 수행할 수 있습니다.
+  };
   const [watching] = useState([
     {
       id: "1",
@@ -74,7 +80,7 @@ function Watch(props) {
             <div className="sc3_header">
               <h2>Free To Watch</h2>
 
-              <Togglebtn title1="영화" title2="TV" />
+              <Togglebtn titles={["영화", "TV"]} onToggle={handleToggle} />
             </div>
             <div className="sc3_content">
               <div className="sc3_content_in">

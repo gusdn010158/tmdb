@@ -1,40 +1,21 @@
 .sc3_header_b {
   border: 1px solid #032541;
   border-radius: 30px;
-  display: flex;
-  width: 150px;
+  display: inline-flex; /* 기존의 flex에서 inline-flex로 변경 */
   height: 40px;
   align-items: center;
   justify-content: center;
+  padding: 0 10px; /* 좌우 패딩 추가 */
 }
 
-/* 버튼 공통 스타일 */
-.sc3_btn1,
-.sc3_btn2 {
-  border-color: 1px solid #032541;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.sc3_btn1.active,
-.sc3_btn2.active {
-  background: #032541;
+.sc3_btn:not(.active) {
   color: black;
   margin: 0;
   padding: 0;
-  width: 50%;
+  padding: 8px 15px; /* 버튼 내부 여백 조정 */
 }
 
-.sc3_btn1:not(.active),
-.sc3_btn2:not(.active) {
-  color: black;
-  margin: 0;
-  padding: 0;
-  width: 50%;
-}
-
-.sc3_btn1.active > h3,
-.sc3_btn2.active > h3 {
+.sc3_btn.active > h3 {
   background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -46,11 +27,26 @@
 }
 
 /* 비활성화된 버튼의 텍스트 색상 */
-.sc3_btn1:not(.active) > h3,
-.sc3_btn2:not(.active) > h3 {
+
+.sc3_btn:not(.active) > h3 {
   color: black;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.sc3_btn {
+  border-color: 1px solid #032541;
+  border-radius: 30px;
+  cursor: pointer;
+  flex: 1; /* 모든 버튼이 동일한 비율로 공간 차지 */
+}
+
+.sc3_btn.active {
+  background: #032541;
+  color: black;
+  margin: 0;
+  padding: 0;
+  padding: 8px 15px; /* 활성화된 버튼 내부 여백 */
 }

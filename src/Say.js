@@ -3,6 +3,12 @@ import "./Say.css";
 import Section from "./Section";
 import Togglebtn from "./Togglebtn";
 function Say() {
+  const [selectedCategory, setSelectedCategory] = useState("스트리밍");
+
+  const handleToggle = (category) => {
+    setSelectedCategory(category);
+    // 여기에서 카테고리 변경에 따른 추가 작업을 수행할 수 있습니다.
+  };
   const [trendingItems] = useState([
     {
       id: 1,
@@ -73,7 +79,7 @@ function Say() {
           <div className="sc2_4">
             <div className="sc2_header">
               <h2>트렌딩</h2>
-              <Togglebtn title1="오늘" title2="이번주" />
+              <Togglebtn titles={["오늘", "이번주"]} onToggle={handleToggle} />
             </div>
 
             <div className="sc2_content">
