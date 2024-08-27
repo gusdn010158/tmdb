@@ -1,46 +1,50 @@
 .sc3_header_b {
-  border: 1px solid #032541;
+  border: 1px solid #032541; /* 기본 색상 */
   border-radius: 30px;
-  display: inline-flex; /* 기존의 flex에서 inline-flex로 변경 */
-  height: 40px;
+  display: inline-flex;
+  height: 30px;
   align-items: center;
   justify-content: center;
-  padding: 0 10px; /* 좌우 패딩 추가 */
 }
 
 .sc3_btn:not(.active) {
   color: black;
   margin: 0;
   padding: 0;
-  padding: 8px 15px; /* 버튼 내부 여백 조정 */
+  padding: 0px 15px;
 }
 
 .sc3_btn.active > h3 {
-  background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
+  background: linear-gradient(
+    to right,
+    rgb(2, 252, 119),
+    rgb(0, 255, 247)
+  ); /*  이부분은 background: black;*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  padding: 8px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  width: 80px;
 }
 
-/* 비활성화된 버튼의 텍스트 색상 */
-
 .sc3_btn:not(.active) > h3 {
-  color: black;
+  color: black; /*이부분은 white로*/
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  width: 80px;
 }
 
 .sc3_btn {
   border-color: 1px solid #032541;
   border-radius: 30px;
   cursor: pointer;
-  flex: 1; /* 모든 버튼이 동일한 비율로 공간 차지 */
+  flex: 1;
 }
 
 .sc3_btn.active {
@@ -48,5 +52,23 @@
   color: black;
   margin: 0;
   padding: 0;
-  padding: 8px 15px; /* 활성화된 버튼 내부 여백 */
+  padding: 4px 15px;
+}
+
+/* 새로운 white-theme 스타일 추가 */
+.white-theme {
+  border: 1px solid rgba(30, 213, 169, 1);
+}
+
+.white-theme .sc3_btn.active {
+  background: rgba(30, 213, 169, 1);
+}
+.white-theme .sc3_btn.active > h3 {
+  background: black; /* 텍스트 배경을 검정색으로 변경 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.white-theme .sc3_btn:not(.active) > h3 {
+  color: white; /* 비활성화된 버튼의 텍스트를 하얀색으로 변경 */
 }

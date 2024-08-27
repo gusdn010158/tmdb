@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import "./Latest.css";
+import Togglebtn from "./Togglebtn";
 
 function Latest() {
+  const [selectedCategory, setSelectedCategory] = useState("스트리밍");
+
+  const handleToggle = (category) => {
+    setSelectedCategory(category);
+    // 여기에서 카테고리 변경에 따른 추가 작업을 수행할 수 있습니다.
+  };
+
   const [latestItems] = useState([
     {
       id: 1,
@@ -56,20 +64,12 @@ function Latest() {
         <div className="sc4_4">
           <div className="sc4_header">
             <h2>최신 예고편</h2>
-            <div className="sc4_s">
-              <div className="sc4_a">
-                <h3>스트리밍</h3>
-              </div>
-              <div className="sc4_a">
-                <h3>TV</h3>
-              </div>
-              <div className="sc4_a">
-                <h3>대여</h3>
-              </div>
-              <div className="sc4_a">
-                <h3>극장</h3>
-              </div>
-            </div>
+
+            <Togglebtn
+              titles={["인기", "스트리밍", "TV", "대여", "극장"]}
+              onToggle={handleToggle}
+              useWhiteTheme={true}
+            />
           </div>
           <div className="sc4_content">
             <div className="sc4_content_in">
