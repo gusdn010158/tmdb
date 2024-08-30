@@ -18,6 +18,9 @@
   "@testing-library/user-event": "^13.5.0",
   
     
+  "axios": "^1.7.5",
+  
+    
   "intersection-observer": "^0.12.2",
   
     

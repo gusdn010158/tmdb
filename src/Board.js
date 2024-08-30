@@ -1,21 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Board.css";
-
+import axios from "axios";
 function Board() {
-  const [text] = useState([
-    { username: "marsters", allTimeEdits: 91975, weeklyEdits: 47712 },
-    { username: "ruizafon", allTimeEdits: 227767, weeklyEdits: 13505 },
-    { username: "heli5m", allTimeEdits: 522083, weeklyEdits: 8409 },
-    { username: "qualitylover", allTimeEdits: 304302, weeklyEdits: 6753 },
-    { username: "lineker", allTimeEdits: 1422258, weeklyEdits: 6129 },
-    { username: "pingu51", allTimeEdits: 439642, weeklyEdits: 5801 },
-    { username: "cam1170", allTimeEdits: 14216, weeklyEdits: 4642 },
-    { username: "franick", allTimeEdits: 88309, weeklyEdits: 3496 },
-    { username: "knrrrzzz", allTimeEdits: 3229, weeklyEdits: 3229 },
-    { username: "litemods", allTimeEdits: 10283, weeklyEdits: 3167 },
-  ]);
+  const [text, setText] = useState([]);
 
-  const maxAllTimeEdits = Math.max(...text.map((item) => item.allTimeEdits));
+  useEffect(() => {
+    axios
+      .get("https://localhost:4000/text")
+      .then((response) => {
+        setText(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+      });
+
+    return () => {
+      setText(false);
+    };
+  }, []);
+  const maxAllTimeEdits =
+    text.length > 0 ? Math.max(...text.map((item) => item.allTimeEdits)) : 1;
 
   return (
     <section className="sc8">
