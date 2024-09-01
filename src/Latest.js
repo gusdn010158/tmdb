@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Latest.css";
 import Togglebtn from "./Togglebtn";
-
+import axios from "axios";
 function Latest() {
   const [selectedCategory, setSelectedCategory] = useState("스트리밍");
 
@@ -9,54 +9,17 @@ function Latest() {
     setSelectedCategory(category);
     // 여기에서 카테고리 변경에 따른 추가 작업을 수행할 수 있습니다.
   };
-
-  const [latestItems] = useState([
-    {
-      id: 1,
-      title: "트레이닝 데이",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg",
-    },
-    {
-      id: 2,
-      title: "분노의 13번가",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/gluQnLUHCAxDZyJrYkyMQh2H8yF.jpg",
-    },
-    {
-      id: 3,
-      title: "사진사의 여자",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/uDobm15VCxWW2MZX3CQey0L6XLj.jpg",
-    },
-    {
-      id: 4,
-      title: "코브라 카이",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg",
-    },
-    {
-      id: 5,
-      title: "괴롭히지마요 나가토로양",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/u6NTVBHWVpQ2KDQHVkjAxf9XMMe.jpg",
-    },
-    {
-      id: 6,
-      title: "라이즈 오브 더 풋솔져",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg",
-    },
-    {
-      id: 7,
-      title: "만달로리안",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/9ijMGlJKqcslswWUzTEwScm82Gs.jpg",
-    },
-    {
-      id: 8,
-      title: "웬즈데이",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
-    },
-    {
-      id: 9,
-      title: "사랑의 블랙홀",
-      img: "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg",
-    },
-  ]);
+  const [latestItems, setLatestItems] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/latestItems")
+      .then((response) => {
+        setLatestItems(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <section className="sc4">

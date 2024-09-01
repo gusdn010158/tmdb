@@ -6,17 +6,13 @@ function Board() {
 
   useEffect(() => {
     axios
-      .get("https://localhost:4000/text")
+      .get("http://localhost:3001/text")
       .then((response) => {
         setText(response.data);
       })
       .catch((error) => {
-        console.error("Error fetching data: ", error);
+        console.log(error);
       });
-
-    return () => {
-      setText(false);
-    };
   }, []);
   const maxAllTimeEdits =
     text.length > 0 ? Math.max(...text.map((item) => item.allTimeEdits)) : 1;

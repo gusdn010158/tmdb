@@ -15,17 +15,13 @@ function Popular() {
 
   useEffect(() => {
     axios
-      .get("https://localhost:4000/popular")
+      .get("http://localhost:3001/popular")
       .then((response) => {
         setPopular(response.data);
       })
       .catch((error) => {
-        console.error("Error fetching data: ", error);
+        console.log(error);
       });
-
-    return () => {
-      setPopular(false);
-    };
   }, []);
   return (
     <section className="sc6">

@@ -1,5 +1,5 @@
 .sc3_header_b {
-  border: 1px solid #032541; /* 기본 색상 */
+  border: 1px solid #032541;
   border-radius: 30px;
   display: inline-flex;
   height: 30px;
@@ -15,11 +15,7 @@
 }
 
 .sc3_btn.active > h3 {
-  background: linear-gradient(
-    to right,
-    rgb(2, 252, 119),
-    rgb(0, 255, 247)
-  ); /*  이부분은 background: black;*/
+  background: linear-gradient(to right, rgb(2, 252, 119), rgb(0, 255, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
@@ -31,7 +27,7 @@
 }
 
 .sc3_btn:not(.active) > h3 {
-  color: black; /*이부분은 white로*/
+  color: black;
   margin: 0;
   display: flex;
   align-items: center;
@@ -55,7 +51,6 @@
   padding: 4px 15px;
 }
 
-/* 새로운 white-theme 스타일 추가 */
 .white-theme {
   border: 1px solid rgba(30, 213, 169, 1);
 }
@@ -64,11 +59,11 @@
   background: rgba(30, 213, 169, 1);
 }
 .white-theme .sc3_btn.active > h3 {
-  background: black; /* 텍스트 배경을 검정색으로 변경 */
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .white-theme .sc3_btn:not(.active) > h3 {
-  color: white; /* 비활성화된 버튼의 텍스트를 하얀색으로 변경 */
+  color: white;
 }

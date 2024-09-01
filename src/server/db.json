@@ -106,5 +106,178 @@
       "date": "11월 23, 2022",
       "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg"
     }
+  ],
+  "trendingItems": [
+    {
+      "id": 1,
+      "title": "라스트 오브 어스",
+      "date": "1월 15, 2023",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg"
+    },
+    {
+      "id": 2,
+      "title": "아바타:물의길",
+      "date": "12월 14, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/z56bVX93oRG6uDeMACR7cXCnAbh.jpg"
+    },
+    {
+      "id": 3,
+      "title": "더 메뉴",
+      "date": "11월 18, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/2Bi9OTGNAkNjStDnMDR93GPgwFY.jpg"
+    },
+    {
+      "id": 4,
+      "title": "메간",
+      "date": "12월 28, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/v0TtgXaZZ6NeDxKackgQK9byEDL.jpg"
+    },
+    {
+      "id": 5,
+      "title": "바빌론",
+      "date": "12월 22, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/5Wnt03vRoKphp1ADWgHKus20vLX.jpg"
+    },
+    {
+      "id": 6,
+      "title": "웬즈데이",
+      "date": "11월 23, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/tNWCukAMubqisamYURvo5jw61As.jpg"
+    },
+    {
+      "id": 7,
+      "title": "스노우 폴스",
+      "date": "1월 17, 2023",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/wfZklSVDJPpHT0Arq4A8GY8Q9S9.jpg"
+    },
+    {
+      "id": 8,
+      "title": "헌터스",
+      "date": "2월 20, 2020",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/rbtgorwuTBoAu0Qm5IvZoQl75WU.jpg"
+    },
+    {
+      "id": 9,
+      "title": "sick",
+      "date": "9월 24, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/yisnA4KdZOfJeDve3DekgUpeCe9.jpg"
+    },
+    {
+      "id": 10,
+      "title": "페일 블루아이",
+      "date": "12월 23, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/hnwq7IbbmBVLGaXcdoTiEk4Z63q.jpg"
+    }
+  ],
+
+  "latestItems": [
+    {
+      "id": 1,
+      "title": "트레이닝 데이",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg"
+    },
+    {
+      "id": 2,
+      "title": "분노의 13번가",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/gluQnLUHCAxDZyJrYkyMQh2H8yF.jpg"
+    },
+    {
+      "id": 3,
+      "title": "사진사의 여자",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/uDobm15VCxWW2MZX3CQey0L6XLj.jpg"
+    },
+    {
+      "id": 4,
+      "title": "코브라 카이",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg"
+    },
+    {
+      "id": 5,
+      "title": "괴롭히지마요 나가토로양",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/u6NTVBHWVpQ2KDQHVkjAxf9XMMe.jpg"
+    },
+    {
+      "id": 6,
+      "title": "라이즈 오브 더 풋솔져",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg"
+    },
+    {
+      "id": 7,
+      "title": "만달로리안",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/9ijMGlJKqcslswWUzTEwScm82Gs.jpg"
+    },
+    {
+      "id": 8,
+      "title": "웬즈데이",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg"
+    },
+    {
+      "id": 9,
+      "title": "사랑의 블랙홀",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg"
+    }
+  ],
+
+  "watching": [
+    {
+      "id": "1",
+      "title": "메트로 폴리스",
+      "date": "2월 06, 1927",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/vODOVn29fr0nLF9MVfpfKDcxuXF.jpg"
+    },
+    {
+      "id": "2",
+      "title": "부러진 화살",
+      "date": "8월 01일, 1950",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/1gafYQCpDxtfIj7HYBNs4Z3m4oW.jpg"
+    },
+    {
+      "id": "3",
+      "title": "쾌찬차",
+      "date": "8월 17, 1984",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/beJtpNbbNJpdhVWlRqmutM1q31m.jpg"
+    },
+    {
+      "id": "4",
+      "title": "디아볼릭",
+      "date": "1월 29, 1955",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/6wmNcHjXnBEhlAvsUUR6ytdLKHO.jpg"
+    },
+    {
+      "id": "5",
+      "title": "살아있는 시체들의 밤",
+      "date": "10월 04, 1968",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/b6yJXwYAXgqJKNdOrEQxxbQ8oG4.jpg"
+    },
+    {
+      "id": "6",
+      "title": "골드랜섬",
+      "date": "5월 05, 2016",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/yTfzOGKAKRqsvXToImspDlOGHaa.jpg"
+    },
+    {
+      "id": "7",
+      "title": "스니치: 마약과의 전쟁",
+      "date": "11월 11, 2011",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/rhVrb6e2xX3VVDZNIfRIo0oQwZT.jpg"
+    },
+    {
+      "id": "8",
+      "title": "위시 어폰",
+      "date": "7월 07, 2017",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/kHiSfrIh5NDoVZDCcQhzq3KHcsB.jpg"
+    },
+    {
+      "id": "9",
+      "title": "멋진 인생",
+      "date": "12월 20, 1946",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/vmvfQoLet0VRPIWsJJ0Ns7rhbWT.jpg"
+    },
+    {
+      "id": "10",
+      "title": "역마차",
+      "date": "9월 03, 1939",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/uIWZB1lzxk6RGwzakM2lMnRah86.jpg"
+    }
   ]
 }
