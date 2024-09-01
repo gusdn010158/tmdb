@@ -1,5 +1,5 @@
 import React from "react";
-import "./Bottom.css";
+import styled from "styled-components";
 
 function Bottom() {
   const sections = [
@@ -28,27 +28,80 @@ function Bottom() {
   ];
 
   return (
-    <section className="sc9">
-      <nav className="sc9_nav">
-        <div className="sc9_logo">
-          <div className="sc9_l"></div>
-          <a className="sc9_b" href="/signup?language=ko">
-            커뮤니티 참여
-          </a>
-        </div>
+    <Section>
+      <Nav>
+        <Logo>
+          <LogoImage />
+          <JoinLink href="/signup?language=ko">커뮤니티 참여</JoinLink>
+        </Logo>
         {sections.map((section, index) => (
-          <div key={index}>
-            <h2>{section.title}</h2>
-            <ul>
+          <SectionBlock key={index}>
+            <SectionTitle>{section.title}</SectionTitle>
+            <LinkList>
               {section.links.map((link, i) => (
-                <li key={i}>{link}</li>
+                <LinkItem key={i}>{link}</LinkItem>
               ))}
-            </ul>
-          </div>
+            </LinkList>
+          </SectionBlock>
         ))}
-      </nav>
-    </section>
+      </Nav>
+    </Section>
   );
 }
 
 export default Bottom;
+
+const Section = styled.section`
+  box-sizing: border-box;
+  height: 320px;
+  width: 100%;
+  background-color: #031d33;
+`;
+
+const Nav = styled.nav`
+  margin: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+`;
+
+const Logo = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 40px;
+`;
+
+const LogoImage = styled.div`
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/89/Tmdb.new.logo.svg);
+  height: 94px;
+  width: 130px;
+`;
+
+const JoinLink = styled.a`
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 900;
+  padding: 10px 20px;
+  color: rgb(1, 180, 228);
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+`;
+
+const SectionBlock = styled.div`
+  padding-right: 20px;
+`;
+
+const SectionTitle = styled.h2`
+  color: #fff;
+`;
+
+const LinkList = styled.ul`
+  padding: 0;
+  color: #fff;
+  list-style: none;
+`;
+
+const LinkItem = styled.li``;
