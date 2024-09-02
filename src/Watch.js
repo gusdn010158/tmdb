@@ -1,8 +1,66 @@
 import React, { useState, useEffect } from "react";
-import "./Watch.css";
+import styled from "styled-components";
 import Section from "./Section";
 import Togglebtn from "./Togglebtn";
 import axios from "axios";
+
+// Styled Components
+const SectionContainer = styled.section`
+  width: 1300px;
+  height: 481px;
+`;
+
+const InnerContainer = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+`;
+
+const ContentWrapper = styled.div`
+  box-sizing: border-box;
+  height: 100%;
+`;
+
+const Header = styled.div`
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  h2 {
+    margin: 0;
+    margin-right: 20px;
+  }
+`;
+
+const Content = styled.div`
+  overflow-x: auto;
+  width: 100%;
+  height: 400px;
+  padding-top: 20px;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #cfd3da;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    border-radius: 30px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: white;
+  }
+`;
+
+const ContentInner = styled.div`
+  display: flex;
+  height: 100%;
+  flex-wrap: nowrap;
+`;
+
 function Watch(props) {
   const [selectedCategory, setSelectedCategory] = useState("스트리밍");
 
@@ -25,27 +83,28 @@ function Watch(props) {
   }, []);
 
   return (
-    <section className="sc3">
-      <div className="sc3_2">
-        <div className="sc3_3">
-          <div className="sc3_4">
-            <div className="sc3_header">
-              <h2>Free To Watch</h2>
-
-              <Togglebtn titles={["영화", "TV"]} onToggle={handleToggle} />
-            </div>
-            <div className="sc3_content">
-              <div className="sc3_content_in">
-                {watching.map((item) => (
-                  <Section img={item.img} title={item.title} date={item.date} />
-                ))}
-                ;
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <SectionContainer>
+      <InnerContainer>
+        <ContentWrapper>
+          <Header>
+            <h2>Free To Watch</h2>
+            <Togglebtn titles={["영화", "TV"]} onToggle={handleToggle} />
+          </Header>
+          <Content>
+            <ContentInner>
+              {watching.map((item) => (
+                <Section
+                  key={item.id}
+                  img={item.img}
+                  title={item.title}
+                  date={item.date}
+                />
+              ))}
+            </ContentInner>
+          </Content>
+        </ContentWrapper>
+      </InnerContainer>
+    </SectionContainer>
   );
 }
 

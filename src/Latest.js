@@ -1,15 +1,112 @@
 import React, { useState, useEffect } from "react";
-import "./Latest.css";
+import styled from "styled-components";
 import Togglebtn from "./Togglebtn";
 import axios from "axios";
+
+// Styled Components
+const Section = styled.section`
+  width: 1300px;
+  height: 388px;
+  background-image: url(https://www.themoviedb.org/t/p/w1920_and_h427_multi_faces/8kxhwABuQhoybGr6TPdrV8w5FLm.jpg);
+  background-color: linear-gradient(
+    to right,
+    rgba(3, 37, 65, 0.75),
+    rgba(3, 37, 65, 0.75)
+  );
+  background-blend-mode: multiply;
+`;
+
+const Wrapper = styled.div`
+  box-sizing: border-box;
+  padding-top: 30px;
+  height: 100%;
+`;
+
+const ContentWrapper = styled.div`
+  height: 100%;
+`;
+
+const Header = styled.div`
+  align-items: center;
+  padding-left: 30px;
+  display: flex;
+  color: aliceblue;
+`;
+
+const Title = styled.h2`
+  border-color: #032541;
+  border-radius: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+`;
+
+const Content = styled.div`
+  height: 250px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #cfd3da;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    border-radius: 30px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: white;
+  }
+`;
+
+const ContentInner = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+`;
+
+const ContentItem = styled.div`
+  margin-left: 40px;
+  width: 300px;
+  min-width: 300px;
+`;
+
+const ContentImage = styled.img`
+  border-radius: 5px;
+  height: 168px;
+  width: 100%;
+  background-size: cover;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+const ContentText = styled.div`
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const ContentTextTitle = styled.h3`
+  padding-top: 20px;
+  margin: 0;
+`;
+
 function Latest() {
   const [selectedCategory, setSelectedCategory] = useState("스트리밍");
+  const [latestItems, setLatestItems] = useState([]);
 
   const handleToggle = (category) => {
     setSelectedCategory(category);
-    // 여기에서 카테고리 변경에 따른 추가 작업을 수행할 수 있습니다.
   };
-  const [latestItems, setLatestItems] = useState([]);
+
   useEffect(() => {
     axios
       .get("http://localhost:3001/latestItems")
@@ -22,34 +119,33 @@ function Latest() {
   }, []);
 
   return (
-    <section className="sc4">
-      <div className="sc4_3">
-        <div className="sc4_4">
-          <div className="sc4_header">
-            <h2>최신 예고편</h2>
-
+    <Section>
+      <Wrapper>
+        <ContentWrapper>
+          <Header>
+            <Title>최신 예고편</Title>
             <Togglebtn
               titles={["인기", "스트리밍", "TV", "대여", "극장"]}
               onToggle={handleToggle}
               useWhiteTheme={true}
             />
-          </div>
-          <div className="sc4_content">
-            <div className="sc4_content_in">
+          </Header>
+          <Content>
+            <ContentInner>
               {latestItems.map((item) => (
-                <div key={item.id} className="sc4_content1">
-                  <img className="sc4_content1_img" alt="img" src={item.img} />
-                  <div className="sc4_content1_txt">
-                    <h3>{item.title}</h3>
+                <ContentItem key={item.id}>
+                  <ContentImage alt="img" src={item.img} />
+                  <ContentText>
+                    <ContentTextTitle>{item.title}</ContentTextTitle>
                     설명
-                  </div>
-                </div>
+                  </ContentText>
+                </ContentItem>
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </ContentInner>
+          </Content>
+        </ContentWrapper>
+      </Wrapper>
+    </Section>
   );
 }
 
