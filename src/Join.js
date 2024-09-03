@@ -62,7 +62,6 @@ const Text2 = styled.div`
   color: #fff;
 `;
 
-// JoinText 컴포넌트
 function JoinText() {
   return (
     <Text1>
@@ -85,7 +84,6 @@ function JoinText() {
   );
 }
 
-// JoinBenefits 컴포넌트
 function JoinBenefits() {
   const benefits = [
     "Enjoy TMDB ad free",
@@ -107,7 +105,6 @@ function JoinBenefits() {
   );
 }
 
-// Join 컴포넌트
 function Join() {
   return (
     <Section>

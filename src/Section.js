@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-// Styled Components
 const SectionContainer = styled.div`
   margin-left: 20px;
   width: 150px;

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Togglebtn from "./Togglebtn";
 import axios from "axios";
 
-// Styled Components
 const Section = styled.section`
   width: 1300px;
   height: 388px;

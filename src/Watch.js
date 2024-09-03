@@ -4,7 +4,6 @@ import Section from "./Section";
 import Togglebtn from "./Togglebtn";
 import axios from "axios";
 
-// Styled Components
 const SectionContainer = styled.section`
   width: 1300px;
   height: 481px;
@@ -66,7 +65,6 @@ function Watch(props) {
 
   const handleToggle = (category) => {
     setSelectedCategory(category);
-    // 여기에서 카테고리 변경에 따른 추가 작업을 수행할 수 있습니다.
   };
 
   const [watching, setWatching] = useState([]);
