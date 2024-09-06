@@ -63,11 +63,11 @@ const Button = styled.div`
 `;
 
 function Togglebtn({ titles, onToggle, useWhiteTheme }) {
-  const [selected, setSelected] = useState(titles[0]); // 초기 상태는 첫 번째 제목으로 설정
+  const [selected, setSelected] = useState(titles[0]); 
 
   const handleClick = (title) => {
     setSelected(title);
-    onToggle(title); // 선택된 값을 부모 컴포넌트로 전달
+    onToggle(title); 
   };
 
   return (
