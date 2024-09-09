@@ -14,8 +14,6 @@ function Board() {
         console.log(error);
       });
   }, []);
-  const maxAllTimeEdits =
-    text.length > 0 ? Math.max(...text.map((item) => item.allTimeEdits)) : 1;
 
   return (
     <Section>
@@ -43,9 +41,7 @@ function Board() {
                       <TextLine>
                         <GreenBar
                           style={{
-                            width: `${
-                              (item.allTimeEdits / maxAllTimeEdits) * 15000
-                            }%`,
+                            width: `${item.allTimeEdits / 100}px`,
                           }}
                         ></GreenBar>
                         <EditCount>{item.allTimeEdits}</EditCount>
@@ -53,9 +49,7 @@ function Board() {
                       <TextLine>
                         <OrangeBar
                           style={{
-                            width: `${
-                              (item.weeklyEdits / maxAllTimeEdits) * 50000
-                            }%`,
+                            width: `${item.weeklyEdits / 30}px`,
                           }}
                         ></OrangeBar>
                         <EditCount>{item.weeklyEdits}</EditCount>

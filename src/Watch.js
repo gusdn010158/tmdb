@@ -38,18 +38,18 @@ const Content = styled.div`
   height: 400px;
   padding-top: 20px;
 
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     width: 10px;
   }
 
-  ::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background-color: #cfd3da;
     background-clip: padding-box;
     border: 5px solid transparent;
     border-radius: 30px;
   }
 
-  ::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     background-color: white;
   }
 `;

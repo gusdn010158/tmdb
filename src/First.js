@@ -21,7 +21,7 @@ function First(props) {
                   <Input1
                     id="input1"
                     type="text"
-                    placeholder="영화,TV프로그램,인물,검색"
+                    placeholder="영화,TV프로그램,인물,검색..."
                   />
                   <Input2 id="input2" type="submit" value="Search" />
                 </form>
@@ -106,9 +106,11 @@ const SearchDiv = styled.div`
 const Input1 = styled.input`
   position: absolute;
   border-radius: 30px;
-  width: 1190px;
-  height: 46px;
+  width: 1170px;
   border: none;
+  padding: 13px 0px 13px 20px;
+  font-size: 16px;
+  color: gray;
 `;
 
 const Input2 = styled.input`
