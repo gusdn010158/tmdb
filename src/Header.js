@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 function Header() {
-  const [movieMenuOpen, setMovieMenuOpen] = useState(false);
-  const [tvMenuOpen, setTvMenuOpen] = useState(false);
-  const [peopleMenuOpen, setPeopleMenuOpen] = useState(false);
-  const [moreMenuOpen, setMoreMenuOpen] = useState(false);
-
   return (
     <Head>
       <Content>
@@ -19,74 +14,18 @@ function Header() {
               />
             </Nlogo>
 
-            <Title>
-              <TitleN
-                onMouseEnter={() => setMovieMenuOpen(true)}
-                onMouseLeave={() => setMovieMenuOpen(false)}
-              >
-                영화
-              </TitleN>
-
-              <TitleN
-                onMouseEnter={() => setTvMenuOpen(true)}
-                onMouseLeave={() => setTvMenuOpen(false)}
-              >
-                tv프로그램
-              </TitleN>
-
-              <TitleN
-                onMouseEnter={() => setPeopleMenuOpen(true)}
-                onMouseLeave={() => setPeopleMenuOpen(false)}
-              >
-                인물
-              </TitleN>
-
-              <TitleN
-                onMouseEnter={() => setMoreMenuOpen(true)}
-                onMouseLeave={() => setMoreMenuOpen(false)}
-              >
-                more
-              </TitleN>
-            </Title>
-            {movieMenuOpen && (
-              <SubMenu left="220px">
-                <SubMenuItem>인기</SubMenuItem>
-                <SubMenuItem>현재 상영중</SubMenuItem>
-                <SubMenuItem>개봉 예정</SubMenuItem>
-                <SubMenuItem>높은 평점</SubMenuItem>
-              </SubMenu>
-            )}
-            {tvMenuOpen && (
-              <SubMenu left="300px">
-                <SubMenuItem>인기</SubMenuItem>
-                <SubMenuItem>오늘 방영</SubMenuItem>
-                <SubMenuItem>TV 방영중</SubMenuItem>
-                <SubMenuItem>높은 평점</SubMenuItem>
-              </SubMenu>
-            )}
-            {peopleMenuOpen && (
-              <SubMenu left="410px">
-                <SubMenuItem>인기 인물</SubMenuItem>
-              </SubMenu>
-            )}
-            {moreMenuOpen && (
-              <SubMenu left="480px">
-                <SubMenuItem>토론 내역</SubMenuItem>
-                <SubMenuItem>기여 랭킹</SubMenuItem>
-                <SubMenuItem>지원</SubMenuItem>
-                <SubMenuItem>API</SubMenuItem>
-              </SubMenu>
-            )}
+            <MovieMenu />
+            <TvMenu />
+            <PeopleMenu />
+            <MoreMenu />
           </ContentO>
 
           <div>
             <Ftitle>
               <Fimg src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-371-plus-white-0bac34f16124808a12ea863b4d9cc6e599dee7c0a80658cfe9ead26939e64517.svg" />
-
               <F2>KO</F2>
               <F1>로그인</F1>
               <F1>회원가입</F1>
-
               <Fimg src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-28-search-blue-177462d06db81ff2a02aa022c1c0be5ba4200d7bd3f51091ed9298980e3a26a1.svg" />
             </Ftitle>
           </div>
@@ -96,7 +35,73 @@ function Header() {
   );
 }
 
-export default Header;
+function MovieMenu() {
+  const [movieMenuOpen, setMovieMenuOpen] = useState(false);
+  const movieItems = ["인기", "현재 상영중", "개봉 예정", "높은 평점"];
+
+  return (
+    <TitleN
+      onMouseEnter={() => setMovieMenuOpen(true)}
+      onMouseLeave={() => setMovieMenuOpen(false)}
+    >
+      영화
+      {movieMenuOpen && <SubMenu left="220px" items={movieItems} />}
+    </TitleN>
+  );
+}
+
+function TvMenu() {
+  const [tvMenuOpen, setTvMenuOpen] = useState(false);
+  const tvItems = ["인기", "오늘 방영", "TV 방영중", "높은 평점"];
+
+  return (
+    <TitleN
+      onMouseEnter={() => setTvMenuOpen(true)}
+      onMouseLeave={() => setTvMenuOpen(false)}
+    >
+      TV 프로그램
+      {tvMenuOpen && <SubMenu left="300px" items={tvItems} />}
+    </TitleN>
+  );
+}
+
+function PeopleMenu() {
+  const [peopleMenuOpen, setPeopleMenuOpen] = useState(false);
+  const peopleItems = ["인기 인물"];
+
+  return (
+    <TitleN
+      onMouseEnter={() => setPeopleMenuOpen(true)}
+      onMouseLeave={() => setPeopleMenuOpen(false)}
+    >
+      인물
+      {peopleMenuOpen && <SubMenu left="410px" items={peopleItems} />}
+    </TitleN>
+  );
+}
+
+function MoreMenu() {
+  const [moreMenuOpen, setMoreMenuOpen] = useState(false);
+  const moreItems = ["토론 내역", "기여 랭킹", "지원", "API"];
+
+  return (
+    <TitleN
+      onMouseEnter={() => setMoreMenuOpen(true)}
+      onMouseLeave={() => setMoreMenuOpen(false)}
+    >
+      More
+      {moreMenuOpen && <SubMenu left="480px" items={moreItems} />}
+    </TitleN>
+  );
+}
+
+const SubMenu = ({ left, items }) => (
+  <StyledSubMenu left={left}>
+    {items.map((item, index) => (
+      <SubMenuItem key={index}>{item}</SubMenuItem>
+    ))}
+  </StyledSubMenu>
+);
 
 const Head = styled.div`
   color: #fff;
@@ -112,11 +117,13 @@ const Head = styled.div`
   background-color: #032541;
   transition: all 2s;
 `;
+
 const Content = styled.div`
   width: 70%;
   display: flex;
   justify-content: center;
 `;
+
 const ContentM = styled.div`
   display: flex;
   justify-content: space-between;
@@ -127,6 +134,7 @@ const ContentM = styled.div`
   width: 100%;
   padding: 0 40px;
 `;
+
 const ContentO = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -134,6 +142,7 @@ const ContentO = styled.div`
   align-items: center;
   overflow: visible;
 `;
+
 const Nlogo = styled.div`
   object-fit: fill;
   display: block;
@@ -141,11 +150,7 @@ const Nlogo = styled.div`
   width: 154px;
   height: 20px;
 `;
-const Title = styled.ul`
-  display: flex;
-  margin: 0;
-  padding: 0;
-`;
+
 const TitleN = styled.li`
   list-style: none;
   margin-right: 10px;
@@ -154,7 +159,7 @@ const TitleN = styled.li`
   cursor: pointer;
 `;
 
-const SubMenu = styled.ul`
+const StyledSubMenu = styled.ul`
   background-color: white;
   color: black;
   position: absolute;
@@ -214,3 +219,5 @@ const Ftitle = styled.ul`
   width: 370px;
   padding: 0;
 `;
+
+export default Header;
