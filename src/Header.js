@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 function Header() {
   const [Toggle, setToggle] = useState(false);
   return (
@@ -8,7 +8,7 @@ function Header() {
       <Content>
         <ContentM>
           <ContentO>
-            <Nlogo>
+            <Nlogo to="/">
               <img
                 src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
                 alt="tmdb"
@@ -19,6 +19,7 @@ function Header() {
             <TvMenu />
             <PeopleMenu />
             <MoreMenu />
+            <MoreLink to="/Serach">Serach</MoreLink>
           </ContentO>
 
           <div>
@@ -110,6 +111,11 @@ const SubMenu = ({ left, items }) => (
   </StyledSubMenu>
 );
 
+const MoreLink = styled(Link)`
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+`;
 const Head = styled.div`
   color: #fff;
   display: flex;
@@ -150,7 +156,7 @@ const ContentO = styled.div`
   overflow: visible;
 `;
 
-const Nlogo = styled.div`
+const Nlogo = styled(Link)`
   object-fit: fill;
   display: block;
   margin-right: 16px;
