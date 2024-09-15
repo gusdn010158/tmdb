@@ -7,7 +7,7 @@ function Search() {
         <h2>제목들</h2>
         <div>컴포넌트1</div>
         <div>컴포넌트 2</div>
-        <div>서치</div>
+        <div>서치 12 더 크게</div>
       </Sertitle>
       <SerCard>
         <div>
@@ -17,6 +17,14 @@ function Search() {
           <div>카드들</div>
           <div>카드들</div>
           <div>카드들</div>
+          <div>카드들</div>
+          <div>카드들</div>
+          <div>카드들</div>
+          <div>카드들</div>
+          <div>카드들</div>
+          <div>카드들</div>
+          <div>카드들</div>
+          <div>서치 부분</div>
         </div>
         <div>더불러오기</div>
       </SerCard>
