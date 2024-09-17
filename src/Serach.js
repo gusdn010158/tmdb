@@ -1,31 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-
+import { AiOutlineRight } from "react-icons/ai";
+import { AiOutlineDown } from "react-icons/ai";
+import axios from "axios";
 function Search() {
-  // 예시 데이터 배열
-  const data = Array(16).fill({
-    imgSrc:
-      "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg",
-    name: "반지의 제왕: 힘의 반지",
-    date: "9월 01, 2022",
-  });
+  const [oncc, setOncc] = useState(true);
+  const [oncc1, setOncc1] = useState(true);
+  const [oncc2, setOncc2] = useState(true);
 
+  const [popular, setPopular] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/popular")
+      .then((response) => {
+        setPopular(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   return (
     <Serach>
       <h2>제목들</h2>
       <Serr>
         <Sertitle>
-          <Sertitled>정렬</Sertitled>
-          <Sertitled>볼수있는 곳</Sertitled>
-          <Sertitled>필터</Sertitled>
-          <Sertitled>검색</Sertitled>
+          <Sertitled>
+            <div>정렬</div>
+            <div onClick={() => setOncc(!oncc)}>
+              {oncc ? <AiOutlineRight /> : <AiOutlineDown />}
+            </div>
+          </Sertitled>
+
+          <Sertitled>
+            <div>볼수있는 곳</div>
+            <div onClick={() => setOncc1(!oncc1)}>
+              {oncc1 ? <AiOutlineRight /> : <AiOutlineDown />}
+            </div>
+          </Sertitled>
+          <Sertitled>
+            <div>필터</div>
+            <div onClick={() => setOncc2(!oncc2)}>
+              {oncc2 ? <AiOutlineRight /> : <AiOutlineDown />}
+            </div>
+          </Sertitled>
+          <Sec>검색</Sec>
         </Sertitle>
         <SerCard>
-          {data.map((item, index) => (
+          {popular.map((item, index) => (
             <SerCards key={index}>
-              <Serimgs src={item.imgSrc} alt={item.name} />
+              <Serimgs src={item.img} alt={item.id} />
               <Sername>
-                {item.name} {item.date}
+                <SerW>{item.title}</SerW>
+                <div>{item.date}</div>
               </Sername>
             </SerCards>
           ))}
@@ -36,15 +62,31 @@ function Search() {
 }
 
 export default Search;
-
-const Sertitled = styled.div`
+const Sec = styled.div`
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: gray;
   margin: 20px;
-  border-radius: 5px;
-  height: 50px;
-  font-size: 20px;
-  border: 1px solid black;
+  padding: 5px 20px;
+  height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 18px;
+`;
+const Sertitled = styled.div`
+  margin: 20px;
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 5px 20px;
+  border-radius: 5px;
+  height: 40px;
+  width: 220px;
+  font-size: 18px;
+  font-weight: 800;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 const Serr = styled.div`
   display: flex;
@@ -55,20 +97,29 @@ const Sertitle = styled.div`
 const SerCards = styled.div`
   margin: 20px;
   border-radius: 5px;
-  border: 1px solid black;
+  box-shadow: 1px 1px 1px 1px gray;
+  border: 1px solid gray;
   width: 200px;
   height: 350px;
 `;
+
+const SerW = styled.div`
+  font-weight: 800;
+  font-size: 17px;
+`;
 const Serimgs = styled.img`
   width: 100%;
-  height: 270px;
+  height: 250px;
   object-fit: cover;
   border-radius: 5px;
 `;
 const Sername = styled.div`
-  text-align: center;
   font-size: 16px;
-  margin-top: 10px;
+
+  padding: 20px 10px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 const Serach = styled.div`
   margin-top: 70px;
