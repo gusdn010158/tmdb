@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { AiOutlineRight } from "react-icons/ai";
 import { AiOutlineDown } from "react-icons/ai";
 import axios from "axios";
-function Search() {
+function Search({ items }) {
   const [oncc, setOncc] = useState(true);
   const [oncc1, setOncc1] = useState(true);
   const [oncc2, setOncc2] = useState(true);
@@ -21,7 +21,7 @@ function Search() {
   }, []);
   return (
     <Serach>
-      <h2>제목들</h2>
+      <h2>페이지제목</h2>
       <Serr>
         <Sertitle>
           <Sertitled>

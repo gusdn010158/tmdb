@@ -29,13 +29,13 @@ function App() {
               <Watch />
               <Join />
               <Board />
-              <Bottom />
             </Main>
           }
         />
 
         <Route path="/Serach" element={<Serach />} />
       </Routes>
+      <Bottom />
     </APP>
   );
 }
@@ -44,7 +44,7 @@ export default App;
 
 const APP = styled.div`
   width: 100%;
-  height: 2000px;
+
   box-sizing: border-box;
 `;
 const Main = styled.div`

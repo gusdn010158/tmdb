@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 function Header() {
   const [Toggle, setToggle] = useState(false);
+  const [T, setT] = useState(false);
   return (
     <Head>
       <Content>
@@ -19,12 +20,20 @@ function Header() {
             <TvMenu />
             <PeopleMenu />
             <MoreMenu />
-            <MoreLink to="/Serach">Serach</MoreLink>
           </ContentO>
 
           <div>
             <Ftitle>
-              <Fimg src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-371-plus-white-0bac34f16124808a12ea863b4d9cc6e599dee7c0a80658cfe9ead26939e64517.svg" />
+              <Fimg
+                onClick={() => setT(!T)}
+                src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-371-plus-white-0bac34f16124808a12ea863b4d9cc6e599dee7c0a80658cfe9ead26939e64517.svg"
+              />
+              {T && (
+                <Plustoast>
+                  찾으시는 영화나 TV 프로그램이 없나요? 로그인 하셔서 직접
+                  만들어주세요.
+                </Plustoast>
+              )}
               <F2
                 onMouseEnter={() => setToggle(true)}
                 onMouseLeave={() => setToggle(false)}
@@ -106,16 +115,13 @@ function MoreMenu() {
 const SubMenu = ({ left, items }) => (
   <StyledSubMenu left={left}>
     {items.map((item, index) => (
-      <SubMenuItem key={index}>{item}</SubMenuItem>
+      <SubMenuItem to="/Serach" key={index}>
+        {item}
+      </SubMenuItem>
     ))}
   </StyledSubMenu>
 );
 
-const MoreLink = styled(Link)`
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-`;
 const Head = styled.div`
   color: #fff;
   display: flex;
@@ -174,7 +180,7 @@ const TitleN = styled.li`
 
 const StyledSubMenu = styled.ul`
   background-color: white;
-  color: black;
+
   position: absolute;
   top: 50px;
   left: ${(props) => props.left};
@@ -184,9 +190,23 @@ const StyledSubMenu = styled.ul`
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 `;
-
-const SubMenuItem = styled.li`
+const Plustoast = styled.ul`
+  background-color: white;
+  top: 55px;
+  margin: 0;
+  width: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  right: 240px;
+  position: absolute;
+`;
+const SubMenuItem = styled(Link)`
   padding: 5px 10px;
+  color: black;
+  display: flex;
+  text-decoration: none;
   cursor: pointer;
   &:hover {
     background-color: #f0f0f0;
