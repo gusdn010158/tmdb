@@ -24,23 +24,23 @@ function Search({ items }) {
       <h2>페이지제목</h2>
       <Serr>
         <Sertitle>
-          <Sertitled>
+          <Sertitled height={oncc ? "40px" : "220px"}>
             <div>정렬</div>
             <div onClick={() => setOncc(!oncc)}>
               {oncc ? <AiOutlineRight /> : <AiOutlineDown />}
             </div>
           </Sertitled>
 
-          <Sertitled>
+          <Sertitled height={oncc1 ? "40px" : "220px"}>
             <div>볼수있는 곳</div>
             <div onClick={() => setOncc1(!oncc1)}>
               {oncc1 ? <AiOutlineRight /> : <AiOutlineDown />}
             </div>
           </Sertitled>
-          <Sertitled>
+          <Sertitled height={oncc2 ? "220px" : "40px"}>
             <div>필터</div>
             <div onClick={() => setOncc2(!oncc2)}>
-              {oncc2 ? <AiOutlineRight /> : <AiOutlineDown />}
+              {oncc2 ? <AiOutlineDown /> : <AiOutlineRight />}
             </div>
           </Sertitled>
           <Sec>검색</Sec>
@@ -64,7 +64,7 @@ function Search({ items }) {
 export default Search;
 const Sec = styled.div`
   border-radius: 20px;
-  border: 1px solid gray;
+
   background-color: gray;
   margin: 20px;
   padding: 5px 20px;
@@ -75,17 +75,17 @@ const Sec = styled.div`
   font-size: 18px;
 `;
 const Sertitled = styled.div`
-  margin: 20px;
-  box-shadow: 1px 1px 1px 1px gray;
+  margin: 0px 20px 20px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 5px 20px;
-  border-radius: 5px;
-  height: 40px;
+  border-radius: 10px;
+  height: ${(props) => props.height};
   width: 220px;
   font-size: 18px;
   font-weight: 800;
-  border: 1px solid gray;
+
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
 `;
 const Serr = styled.div`
@@ -95,12 +95,10 @@ const Sertitle = styled.div`
   width: 300px;
 `;
 const SerCards = styled.div`
-  margin: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px gray;
-  border: 1px solid gray;
-  width: 200px;
-  height: 350px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  width: 17%;
 `;
 
 const SerW = styled.div`
