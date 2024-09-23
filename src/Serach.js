@@ -24,25 +24,79 @@ function Search({ items }) {
       <h2>페이지제목</h2>
       <Serr>
         <Sertitle>
-          <Sertitled height={oncc ? "40px" : "220px"}>
-            <div>정렬</div>
-            <div onClick={() => setOncc(!oncc)}>
-              {oncc ? <AiOutlineRight /> : <AiOutlineDown />}
-            </div>
-          </Sertitled>
+          {oncc ? (
+            <Sertitled height={oncc ? "40px" : "220px"}>
+              <Sertitledtop>
+                <div>정렬</div>
+                <div onClick={() => setOncc(!oncc)}>
+                  <AiOutlineDown />
+                </div>
+              </Sertitledtop>
+            </Sertitled>
+          ) : (
+            <Sertitled>
+              <Sertitledtop>
+                <div>정렬</div>
+                <div onClick={() => setOncc(!oncc)}>
+                  <AiOutlineRight />
+                </div>
+              </Sertitledtop>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+            </Sertitled>
+          )}
+          {oncc1 ? (
+            <Sertitled height={oncc1 ? "40px" : "220px"}>
+              <Sertitledtop>
+                <div>볼수있는 곳</div>
+                <div onClick={() => setOncc1(!oncc1)}>
+                  <AiOutlineDown />
+                </div>
+              </Sertitledtop>
+            </Sertitled>
+          ) : (
+            <Sertitled>
+              <Sertitledtop>
+                <div>볼수있는 곳</div>
+                <div onClick={() => setOncc1(!oncc1)}>
+                  <AiOutlineRight />
+                </div>
+              </Sertitledtop>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+            </Sertitled>
+          )}
+          {oncc2 ? (
+            <Sertitled height={oncc2 ? "600px" : "40px"}>
+              <Sertitledtop>
+                <div>필터</div>
+                <div onClick={() => setOncc2(!oncc2)}>
+                  <AiOutlineDown />
+                </div>
+              </Sertitledtop>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+              <div>뭐시기</div>
+            </Sertitled>
+          ) : (
+            <Sertitled>
+              <Sertitledtop>
+                <div>필터</div>
+                <div onClick={() => setOncc2(!oncc2)}>
+                  <AiOutlineRight />
+                </div>
+              </Sertitledtop>
+            </Sertitled>
+          )}
 
-          <Sertitled height={oncc1 ? "40px" : "220px"}>
-            <div>볼수있는 곳</div>
-            <div onClick={() => setOncc1(!oncc1)}>
-              {oncc1 ? <AiOutlineRight /> : <AiOutlineDown />}
-            </div>
-          </Sertitled>
-          <Sertitled height={oncc2 ? "220px" : "40px"}>
-            <div>필터</div>
-            <div onClick={() => setOncc2(!oncc2)}>
-              {oncc2 ? <AiOutlineDown /> : <AiOutlineRight />}
-            </div>
-          </Sertitled>
           <Sec>검색</Sec>
         </Sertitle>
         <SerCard>
@@ -85,8 +139,15 @@ const Sertitled = styled.div`
   font-weight: 800;
 
   display: flex;
+  flex-direction: column;
 
+  justify-content: space-around;
+`;
+const Sertitledtop = styled.div`
+  display: flex;
+  height: 40px;
   justify-content: space-between;
+  border-bottom: 1px solid black;
 `;
 const Serr = styled.div`
   display: flex;
@@ -99,6 +160,7 @@ const SerCards = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
   width: 17%;
+  height: 370px;
 `;
 
 const SerW = styled.div`
