@@ -41,7 +41,16 @@ function Search({ items }) {
                   <AiOutlineRight />
                 </div>
               </Sertitledtop>
+
               <div>결과 정렬 기준</div>
+              <Selec>
+                <option value="option1">인기도 내림차순</option>
+                <option value="option2">인기도 오름차순</option>
+                <option value="option3">평점 내림차순</option>
+                <option value="option4">평점 오름차순</option>
+                <option value="option5">상영일 오름차순</option>
+                <option value="option6">상영일 내림차순</option>
+              </Selec>
             </Sertitled>
           )}
           {oncc1 ? (
@@ -61,8 +70,28 @@ function Search({ items }) {
                   <AiOutlineRight />
                 </div>
               </Sertitledtop>
-              <div>나의 스트리밍 서비스</div>
-              <div>국가</div>
+              <Sertitledbottom>
+                <div>나의 스트리밍 서비스</div>
+                <Sercon>
+                  <div>국가</div>
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/dQeAar5H991VYporEjUspolDarG.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/hPcjSaWfMwEqXaCMu7Fkb529Dkc.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/5gmEivxOGPdq4Afpq1f8ktLtEW1.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/2E03IAZsX4ZaUqM7tXlctEPMGWS.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/crFbxg6jkiKc14gpIGMkre9Y3mu.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/fj9Y8iIMFUC6952HwxbGixTQPb7.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/eKVmLFHW5PeNhuR7Nedd8OIxW2M.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/oR1aNm1Qu9jQBkW4VrGPWhqbC3P.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/k2YgZyxij5RcnS1qqUYEUrJB4oQ.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/5zqbck5mo8PuVbGu2ngBUdn5Yga.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/6dET59jNU0ADysghEjl8Unuc7Ca.jpg" />
+                  <Serconimg src="https://media.themoviedb.org/t/p/original/mSH24WQcRDJ2fsL5iucXqqRnSRb.jpg" />
+                </Sercon>
+              </Sertitledbottom>
             </Sertitled>
           )}
           {oncc2 ? (
@@ -73,10 +102,75 @@ function Search({ items }) {
                   <AiOutlineDown />
                 </div>
               </Sertitledtop>
-              <div>시청유무</div>
-              <div>시청방법</div>
-              <div>개봉일</div>
-              <div>장르</div>
+              <div>
+                <Sercon>
+                  <div>시청유무</div>
+
+                  <div>
+                    <input
+                      type="radio"
+                      id="option1"
+                      name="group1"
+                      value="value1"
+                    />
+                    전체
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="option2"
+                      name="group1"
+                      value="value2"
+                    />
+                    안본영화
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="option3"
+                      name="group1"
+                      value="value3"
+                    />
+                    본 영화
+                  </div>
+                </Sercon>
+              </div>
+              <div>
+                <Sercon>
+                  <div>시청방법</div>
+                  <input
+                    type="checkbox"
+                    id="option1"
+                    name="option1"
+                    value="value1"
+                  />
+                  전체 시청 방법
+                </Sercon>
+              </div>
+              <div>
+                <Sercon>
+                  <div>장르</div>
+                  <Diwkd>SF</Diwkd>
+                  <Diwkd>TV영화</Diwkd>
+                  <Diwkd>가족</Diwkd>
+                  <Diwkd>공포</Diwkd>
+                  <Diwkd>다큐멘터리</Diwkd>
+                  <Diwkd>드라마</Diwkd>
+                  <Diwkd>로맨스</Diwkd>
+                  <Diwkd>모험</Diwkd>
+                  <Diwkd>미스터리</Diwkd>
+                  <Diwkd>범죄</Diwkd>
+                  <Diwkd>서부</Diwkd>
+                  <Diwkd>스릴러</Diwkd>
+                  <Diwkd>애니메이션</Diwkd>
+                  <Diwkd>액션</Diwkd>
+                  <Diwkd>역사</Diwkd>
+                  <Diwkd>음악</Diwkd>
+                  <Diwkd>전쟁</Diwkd>
+                  <Diwkd>코미디</Diwkd>
+                  <Diwkd>판타지</Diwkd>
+                </Sercon>
+              </div>
               <div>키워드</div>
             </Sertitled>
           ) : (
@@ -136,12 +230,39 @@ const Sertitled = styled.div`
 
   justify-content: space-around;
 `;
+const Diwkd = styled.div`
+  border-radius: 40px;
+  margin: 3px;
+  border: 1px solid black;
+  padding: 2px 10px; /* 텍스트 주변에 여백을 주기 위해 패딩 추가 */
+  display: inline-block; /* 텍스트 길이에 맞게 width 조정 */
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+`;
 const Sertitledtop = styled.div`
   display: flex;
   height: 40px;
   justify-content: space-between;
   border-bottom: 1px solid gray;
 `;
+const Serconimg = styled.img`
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  padding: 2px;
+  border-radius: 10px;
+`;
+const Sertitledbottom = styled.div``;
+const Sercon = styled.div`
+  border-bottom: 1px solid black;
+`;
+const Selec = styled.select`
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 20px;
+  background-color: gray;
+  border-radius: 5px;
+`;
+
 const Serr = styled.div`
   display: flex;
 `;
@@ -182,7 +303,7 @@ const Serach = styled.div`
 `;
 const SerCard = styled.div`
   width: 1000px;
-
+  height: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
