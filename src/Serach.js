@@ -25,7 +25,7 @@ function Search({ items }) {
       <Serr>
         <Sertitle>
           {oncc ? (
-            <Sertitled height={oncc ? "40px" : "220px"}>
+            <Sertitled>
               <Sertitledtop>
                 <div>정렬</div>
                 <div onClick={() => setOncc(!oncc)}>
@@ -41,15 +41,11 @@ function Search({ items }) {
                   <AiOutlineRight />
                 </div>
               </Sertitledtop>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
+              <div>결과 정렬 기준</div>
             </Sertitled>
           )}
           {oncc1 ? (
-            <Sertitled height={oncc1 ? "40px" : "220px"}>
+            <Sertitled>
               <Sertitledtop>
                 <div>볼수있는 곳</div>
                 <div onClick={() => setOncc1(!oncc1)}>
@@ -65,26 +61,23 @@ function Search({ items }) {
                   <AiOutlineRight />
                 </div>
               </Sertitledtop>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
+              <div>나의 스트리밍 서비스</div>
+              <div>국가</div>
             </Sertitled>
           )}
           {oncc2 ? (
-            <Sertitled height={oncc2 ? "600px" : "40px"}>
+            <Sertitled>
               <Sertitledtop>
                 <div>필터</div>
                 <div onClick={() => setOncc2(!oncc2)}>
                   <AiOutlineDown />
                 </div>
               </Sertitledtop>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
-              <div>뭐시기</div>
+              <div>시청유무</div>
+              <div>시청방법</div>
+              <div>개봉일</div>
+              <div>장르</div>
+              <div>키워드</div>
             </Sertitled>
           ) : (
             <Sertitled>
@@ -133,7 +126,7 @@ const Sertitled = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 5px 20px;
   border-radius: 10px;
-  height: ${(props) => props.height};
+
   width: 220px;
   font-size: 18px;
   font-weight: 800;
@@ -147,7 +140,7 @@ const Sertitledtop = styled.div`
   display: flex;
   height: 40px;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
 `;
 const Serr = styled.div`
   display: flex;
