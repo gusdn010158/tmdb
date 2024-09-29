@@ -67,11 +67,18 @@ function Search({ items }) {
               <Sertitledtop>
                 <div>볼수있는 곳</div>
                 <div onClick={() => setOncc1(!oncc1)}>
-                  <AiOutlineRight />
+                  <AiOutlineDown />
                 </div>
               </Sertitledtop>
               <Sertitledbottom>
                 <div>나의 스트리밍 서비스</div>
+                <input
+                  type="checkbox"
+                  id="option1"
+                  name="option1"
+                  value="value1"
+                />
+                나의 구독 중 서비스
                 <Sercon>
                   <div>국가</div>
                   <Serconimg src="https://media.themoviedb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg" />
@@ -171,7 +178,10 @@ function Search({ items }) {
                   <Diwkd>판타지</Diwkd>
                 </Sercon>
               </div>
-              <div>키워드</div>
+              <div>
+                <div>키워드</div>
+                <Sinput />
+              </div>
             </Sertitled>
           ) : (
             <Sertitled>
@@ -203,6 +213,11 @@ function Search({ items }) {
 }
 
 export default Search;
+
+const Sinput = styled.input`
+  width: 210px;
+  height: 20px;
+`;
 const Sec = styled.div`
   border-radius: 20px;
 
@@ -224,7 +239,7 @@ const Sertitled = styled.div`
   width: 220px;
   font-size: 18px;
   font-weight: 800;
-
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
 
@@ -234,7 +249,7 @@ const Diwkd = styled.div`
   border-radius: 40px;
   margin: 3px;
   border: 1px solid black;
-  padding: 2px 10px; /* 텍스트 주변에 여백을 주기 위해 패딩 추가 */
+  padding: 2px 10px;
   display: inline-block; /* 텍스트 길이에 맞게 width 조정 */
   white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
 `;
@@ -242,7 +257,6 @@ const Sertitledtop = styled.div`
   display: flex;
   height: 40px;
   justify-content: space-between;
-  border-bottom: 1px solid gray;
 `;
 const Serconimg = styled.img`
   width: 50px;
@@ -253,7 +267,8 @@ const Serconimg = styled.img`
 `;
 const Sertitledbottom = styled.div``;
 const Sercon = styled.div`
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
+  padding: 10px 0px 10px 0px;
 `;
 const Selec = styled.select`
   width: 100%;
