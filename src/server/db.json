@@ -175,6 +175,68 @@
       "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/hnwq7IbbmBVLGaXcdoTiEk4Z63q.jpg"
     }
   ],
+  "streamingServices": [
+    {
+      "id": 1,
+      "img": "https://media.themoviedb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+    },
+    {
+      "id": 2,
+      "img": "https://media.themoviedb.org/t/p/original/dQeAar5H991VYporEjUspolDarG.jpg"
+    },
+    {
+      "id": 3,
+      "img": "https://media.themoviedb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
+    },
+    {
+      "id": 4,
+      "img": "https://media.themoviedb.org/t/p/original/hPcjSaWfMwEqXaCMu7Fkb529Dkc.jpg"
+    },
+    {
+      "id": 5,
+      "img": "https://media.themoviedb.org/t/p/original/5gmEivxOGPdq4Afpq1f8ktLtEW1.jpg"
+    },
+    {
+      "id": 6,
+      "img": "https://media.themoviedb.org/t/p/original/2E03IAZsX4ZaUqM7tXlctEPMGWS.jpg"
+    },
+    {
+      "id": 7,
+      "img": "https://media.themoviedb.org/t/p/original/crFbxg6jkiKc14gpIGMkre9Y3mu.jpg"
+    },
+    {
+      "id": 8,
+      "img": "https://media.themoviedb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+    },
+    {
+      "id": 9,
+      "img": "https://media.themoviedb.org/t/p/original/fj9Y8iIMFUC6952HwxbGixTQPb7.jpg"
+    },
+    {
+      "id": 10,
+      "img": "https://media.themoviedb.org/t/p/original/eKVmLFHW5PeNhuR7Nedd8OIxW2M.jpg"
+    },
+    {
+      "id": 11,
+      "img": "https://media.themoviedb.org/t/p/original/oR1aNm1Qu9jQBkW4VrGPWhqbC3P.jpg"
+    },
+    {
+      "id": 12,
+      "img": "https://media.themoviedb.org/t/p/original/k2YgZyxij5RcnS1qqUYEUrJB4oQ.jpg"
+    },
+    {
+      "id": 13,
+      "img": "https://media.themoviedb.org/t/p/original/5zqbck5mo8PuVbGu2ngBUdn5Yga.jpg"
+    },
+    {
+      "id": 14,
+      "img": "https://media.themoviedb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg"
+    },
+    {
+      "id": 15,
+      "img": "https://media.themoviedb.org/t/p/original/xUVnqlz63ObmVrOU9Y6fXfzKIhC.jpg"
+    }
+  ],
 
   "latestItems": [
     {
