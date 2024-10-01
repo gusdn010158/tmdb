@@ -311,13 +311,17 @@ function Search() {
                 나의 구독 중 서비스
                 <Sercon>
                   <div>국가</div>
-                  {streamingServices.map((service, index) => (
-                    <Serconimg
-                      key={index}
-                      src={service.img}
-                      alt={`Streaming service ${index + 1}`}
-                    />
-                  ))}
+                  {streamingServices && streamingServices.length > 0 ? (
+                    streamingServices.map((service, index) => (
+                      <Serconimg
+                        key={index}
+                        src={service.img}
+                        alt={`Streaming service ${index + 1}`}
+                      />
+                    ))
+                  ) : (
+                    <div>스트리밍 서비스를 불러오는 중입니다...</div>
+                  )}
                 </Sercon>
               </Sertitledbottom>
             </Sertitled>
@@ -378,18 +382,22 @@ function Search() {
 
           <Sec>검색</Sec>
         </Sertitle>
-
         {/* 인기 콘텐츠 표시 */}
+
         <SerCard>
-          {popular.map((item) => (
-            <SerCards key={item.id}>
-              <Serimgs src={item.img} alt={item.title} />
-              <Sername>
-                <SerW>{item.title}</SerW>
-                <div>{item.date}</div>
-              </Sername>
-            </SerCards>
-          ))}
+          {popular && popular.length > 0 ? (
+            popular.map((item) => (
+              <SerCards key={item.id}>
+                <Serimgs src={item.img} alt={item.title} />
+                <Sername>
+                  <SerW>{item.title}</SerW>
+                  <div>{item.date}</div>
+                </Sername>
+              </SerCards>
+            ))
+          ) : (
+            <div>데이터를 불러오는 중입니다...</div> // 로딩 중일 때 표시할 내용
+          )}
         </SerCard>
       </Serr>
     </Serach>
