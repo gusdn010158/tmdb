@@ -175,6 +175,85 @@
       "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/hnwq7IbbmBVLGaXcdoTiEk4Z63q.jpg"
     }
   ],
+  "Ddays": [
+    {
+      "dday": "인기도 내림차순"
+    },
+    {
+      "dday": "인기도 오름차순"
+    },
+    {
+      "dday": "평점 내림차순"
+    },
+    {
+      "dday": "평점 오름차순"
+    },
+    {
+      "dday": "상영일 오름차순"
+    },
+    {
+      "dday": "상영일 내림차순"
+    }
+  ],
+  "Ditems": [
+    {
+      "Ditem": "SF"
+    },
+    {
+      "Ditem": "TV영화"
+    },
+    {
+      "Ditem": "가족"
+    },
+    {
+      "Ditem": "공포"
+    },
+    {
+      "Ditem": "다큐멘터리"
+    },
+    {
+      "Ditem": "드라마"
+    },
+    {
+      "Ditem": "로맨스"
+    },
+    {
+      "Ditem": "모험"
+    },
+    {
+      "Ditem": "미스터리"
+    },
+    {
+      "Ditem": "범죄"
+    },
+    {
+      "Ditem": "서부"
+    },
+    {
+      "Ditem": "스릴러"
+    },
+    {
+      "Ditem": "애니메이션"
+    },
+    {
+      "Ditem": "액션"
+    },
+    {
+      "Ditem": "역사"
+    },
+    {
+      "Ditem": "음악"
+    },
+    {
+      "Ditem": "전쟁"
+    },
+    {
+      "Ditem": "코미디"
+    },
+    {
+      "Ditem": "판타지"
+    }
+  ],
   "streamingServices": [
     {
       "id": 1,
@@ -231,10 +310,6 @@
     {
       "id": 14,
       "img": "https://media.themoviedb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg"
-    },
-    {
-      "id": 15,
-      "img": "https://media.themoviedb.org/t/p/original/xUVnqlz63ObmVrOU9Y6fXfzKIhC.jpg"
     }
   ],
 

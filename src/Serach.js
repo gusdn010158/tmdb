@@ -9,11 +9,44 @@ function Search({ items }) {
   const [oncc2, setOncc2] = useState(true);
 
   const [popular, setPopular] = useState([]);
+  const [streamingServices, setStreamingServices] = useState([]);
+  const [Ditems, setDitems] = useState([]);
+  const [Ddays, setDdays] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/Ddays")
+      .then((response) => {
+        setDdays(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/Ditems")
+      .then((response) => {
+        setDitems(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   useEffect(() => {
     axios
       .get("http://localhost:3001/popular")
       .then((response) => {
         setPopular(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/streamingServices")
+      .then((response) => {
+        setStreamingServices(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -44,12 +77,9 @@ function Search({ items }) {
 
               <div>결과 정렬 기준</div>
               <Selec>
-                <option value="option1">인기도 내림차순</option>
-                <option value="option2">인기도 오름차순</option>
-                <option value="option3">평점 내림차순</option>
-                <option value="option4">평점 오름차순</option>
-                <option value="option5">상영일 오름차순</option>
-                <option value="option6">상영일 내림차순</option>
+                {Ddays.map((item) => (
+                  <option value="option1">{item.dday}</option>
+                ))}
               </Selec>
             </Sertitled>
           )}
@@ -81,22 +111,9 @@ function Search({ items }) {
                 나의 구독 중 서비스
                 <Sercon>
                   <div>국가</div>
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/dQeAar5H991VYporEjUspolDarG.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/hPcjSaWfMwEqXaCMu7Fkb529Dkc.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/5gmEivxOGPdq4Afpq1f8ktLtEW1.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/2E03IAZsX4ZaUqM7tXlctEPMGWS.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/crFbxg6jkiKc14gpIGMkre9Y3mu.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/fj9Y8iIMFUC6952HwxbGixTQPb7.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/eKVmLFHW5PeNhuR7Nedd8OIxW2M.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/oR1aNm1Qu9jQBkW4VrGPWhqbC3P.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/k2YgZyxij5RcnS1qqUYEUrJB4oQ.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/5zqbck5mo8PuVbGu2ngBUdn5Yga.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/6dET59jNU0ADysghEjl8Unuc7Ca.jpg" />
-                  <Serconimg src="https://media.themoviedb.org/t/p/original/mSH24WQcRDJ2fsL5iucXqqRnSRb.jpg" />
+                  {streamingServices.map((item) => (
+                    <Serconimg src={item.img} alt={item.id} />
+                  ))}
                 </Sercon>
               </Sertitledbottom>
             </Sertitled>
@@ -157,25 +174,10 @@ function Search({ items }) {
               <div>
                 <Sercon>
                   <div>장르</div>
-                  <Diwkd>SF</Diwkd>
-                  <Diwkd>TV영화</Diwkd>
-                  <Diwkd>가족</Diwkd>
-                  <Diwkd>공포</Diwkd>
-                  <Diwkd>다큐멘터리</Diwkd>
-                  <Diwkd>드라마</Diwkd>
-                  <Diwkd>로맨스</Diwkd>
-                  <Diwkd>모험</Diwkd>
-                  <Diwkd>미스터리</Diwkd>
-                  <Diwkd>범죄</Diwkd>
-                  <Diwkd>서부</Diwkd>
-                  <Diwkd>스릴러</Diwkd>
-                  <Diwkd>애니메이션</Diwkd>
-                  <Diwkd>액션</Diwkd>
-                  <Diwkd>역사</Diwkd>
-                  <Diwkd>음악</Diwkd>
-                  <Diwkd>전쟁</Diwkd>
-                  <Diwkd>코미디</Diwkd>
-                  <Diwkd>판타지</Diwkd>
+
+                  {Ditems.map((item) => (
+                    <Diwkd>{item.Ditem}</Diwkd>
+                  ))}
                 </Sercon>
               </div>
               <div>
