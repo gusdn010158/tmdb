@@ -135,6 +135,18 @@
       "title": "레슨 플랜",
       "date": "11월 23, 2022",
       "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg"
+    },
+    {
+      "id": 15,
+      "title": "왕좌의 게임",
+      "date": "4월 17, 2011",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/lxfllsQQ32gKglUxrM61WaFeNcy.jpg"
+    },
+    {
+      "id": 16,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
     }
   ],
   "trendingItems": [

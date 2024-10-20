@@ -187,7 +187,7 @@ const Sec = styled.div`
 `;
 const SerCard = styled.div`
   width: 1000px;
-  height: 800px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -196,7 +196,8 @@ const SerCards = styled.div`
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
-  width: 17%;
+  margin: 20px;
+  width: 19%;
   height: 370px;
 `;
 const Serimgs = styled.img`
