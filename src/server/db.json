@@ -51,6 +51,43 @@
       "weeklyEdits": 3167
     }
   ],
+  "sections": [
+    {
+      "title": "THE BASICS",
+      "links": {
+        "link1": "TMDB에 대해",
+        "link2": "문의 하기",
+        "link3": "Support Forums",
+        "link4": "API",
+        "link5": "System Status"
+      }
+    },
+    {
+      "title": "참여하기",
+      "links": {
+        "link1": "기여 지침서",
+        "link2": "새 영화 추가",
+        "link3": "새 TV 프로그램 추가"
+      }
+    },
+    {
+      "title": "커뮤니티",
+      "links": {
+        "link1": "가이드 라인",
+        "link2": "토론 내역",
+        "link3": "기여 랭킹",
+        "link4": "Twitter"
+      }
+    },
+    {
+      "title": "법적 사항",
+      "links": {
+        "link1": "서비스 이용약관",
+        "link2": "API Terms of Use",
+        "link3": "개인정보약관"
+      }
+    }
+  ],
   "popular": [
     {
       "id": 1,
