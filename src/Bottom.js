@@ -9,10 +9,10 @@ function Bottom() {
     axios
       .get("http://localhost:3001/sections")
       .then((response) => {
-        setSect(response.data.sections || []);
+        setSect(response.data);
       })
       .catch((error) => {
-        console.error("Error fetching data:", error.message, error);
+        console.error("Error fetching data:");
       });
   }, []);
 

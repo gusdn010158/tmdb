@@ -4,8 +4,8 @@ import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
 import axios from "axios";
 
 function Search() {
-  const [isSortOpen, setSortOpen] = useState(true);
-  const [isStreamingOpen, setStreamingOpen] = useState(true);
+  const [isSortOpen, setSortOpen] = useState(false);
+  const [isStreamingOpen, setStreamingOpen] = useState(false);
   const [isFilterOpen, setFilterOpen] = useState(true);
 
   const [popularItems, setPopularItems] = useState([]);
