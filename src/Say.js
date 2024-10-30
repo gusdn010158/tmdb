@@ -64,11 +64,31 @@ const Content = styled.div`
 const ContentInner = styled.div`
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0,
+      #fff 100%
+    );
+    pointer-events: none;
+    opacity: ${(props) =>
+      props.hasScrollEffect ? 1 : 0}; // opacity로 상태 제어
+    transition: opacity 0.3s linear; // 트랜지션 추가
+  }
 `;
 
 function Say() {
   const [selectedCategory, setSelectedCategory] = useState("스트리밍");
   const [trendingItems, setTrendingItems] = useState([]);
+  const [hasScrollEffect, setHasScrollEffect] = useState(true);
 
   const handleToggle = (category) => {
     setSelectedCategory(category);
@@ -85,6 +105,13 @@ function Say() {
       });
   }, []);
 
+  // 스크롤 위치 감지 함수
+  const handleScroll = (e) => {
+    const { scrollLeft } = e.target;
+    // 스크롤이 왼쪽 끝에 있으면 희미한 효과를 보이도록 설정
+    setHasScrollEffect(scrollLeft === 0);
+  };
+
   return (
     <StyledSection>
       <Container>
@@ -94,8 +121,8 @@ function Say() {
               <Title>트렌딩</Title>
               <Togglebtn titles={["오늘", "이번주"]} onToggle={handleToggle} />
             </Header>
-            <Content>
-              <ContentInner>
+            <Content onScroll={handleScroll}>
+              <ContentInner hasScrollEffect={hasScrollEffect}>
                 {trendingItems.map((item) => (
                   <Section
                     key={item.id}
