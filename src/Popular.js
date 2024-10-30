@@ -63,12 +63,32 @@ const ContentInner = styled.div`
   padding-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0,
+      #fff 100%
+    );
+    pointer-events: none; //마우스 이벤트를 차단
+    opacity: ${(props) =>
+      props.hasScrollEffect
+        ? 1
+        : 0}; // opacity가  hasScrollEffect이 true가 되었을때 1이 되게 아니면 0
+    transition: opacity 0.3s linear; // 트랜지션 추가
+  }
 `;
 
 function Popular() {
   const [selectedCategory, setSelectedCategory] = useState("스트리밍");
   const [popular, setPopular] = useState([]);
-
+  const [hasScrollEffect, setHasScrollEffect] = useState(true);
   const handleToggle = (category) => {
     setSelectedCategory(category);
   };
@@ -84,6 +104,11 @@ function Popular() {
       });
   }, []);
 
+  const handleScroll = (e) => {
+    const { scrollLeft } = e.target; //가로 스크롤 위치를 나타냄
+
+    setHasScrollEffect(scrollLeft === 0); //가로스크롤이 0일시hasScrollEffect이 true
+  };
   return (
     <StyledSection>
       <Container>
@@ -96,8 +121,8 @@ function Popular() {
                 onToggle={handleToggle}
               />
             </Header>
-            <Content>
-              <ContentInner>
+            <Content onScroll={handleScroll}>
+              <ContentInner hasScrollEffect={hasScrollEffect}>
                 {popular.map((item) => (
                   <Section
                     key={item.id}

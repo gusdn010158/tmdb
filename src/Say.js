@@ -7,7 +7,7 @@ import Togglebtn from "./Togglebtn";
 const StyledSection = styled.section`
   width: 1300px;
   height: 443px;
-  background-image: url(https://www.themoviedb.org/assets/2/v4/misc/trendi…25c187814c0a2efef225494c038098d62317d923f8415.svg);
+
   background-position: 50% 200px;
   background-repeat: no-repeat;
 `;
@@ -78,9 +78,11 @@ const ContentInner = styled.div`
       rgba(255, 255, 255, 0) 0,
       #fff 100%
     );
-    pointer-events: none;
+    pointer-events: none; //마우스 이벤트를 차단
     opacity: ${(props) =>
-      props.hasScrollEffect ? 1 : 0}; // opacity로 상태 제어
+      props.hasScrollEffect
+        ? 1
+        : 0}; // opacity가  hasScrollEffect이 true가 되었을때 1이 되게 아니면 0
     transition: opacity 0.3s linear; // 트랜지션 추가
   }
 `;
@@ -105,11 +107,10 @@ function Say() {
       });
   }, []);
 
-  // 스크롤 위치 감지 함수
   const handleScroll = (e) => {
-    const { scrollLeft } = e.target;
-    // 스크롤이 왼쪽 끝에 있으면 희미한 효과를 보이도록 설정
-    setHasScrollEffect(scrollLeft === 0);
+    const { scrollLeft } = e.target; //가로 스크롤 위치를 나타냄
+
+    setHasScrollEffect(scrollLeft === 0); //가로스크롤이 0일시hasScrollEffect이 true
   };
 
   return (

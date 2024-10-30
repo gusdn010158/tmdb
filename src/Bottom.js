@@ -60,7 +60,9 @@ const Section = styled.section`
 `;
 
 const Nav = styled.nav`
-  margin: 40px;
+  margin-top: 40px;
+  padding: 40px;
+
   display: flex;
   align-content: center;
   justify-content: center;
