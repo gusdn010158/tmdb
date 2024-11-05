@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
 import axios from "axios";
+import Spopular from "./Spopular";
 
 function Search() {
   const [isSortOpen, setSortOpen] = useState(false);
   const [isStreamingOpen, setStreamingOpen] = useState(false);
   const [isFilterOpen, setFilterOpen] = useState(true);
 
-  const [popularItems, setPopularItems] = useState([]);
   const [streamingServices, setStreamingServices] = useState([]);
   const [genreItems, setGenreItems] = useState([]);
   const [sortOptions, setSortOptions] = useState([]);
@@ -16,16 +16,13 @@ function Search() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [ddaysRes, ditemsRes, popularRes, servicesRes] =
-          await Promise.all([
-            axios.get("http://localhost:3001/Ddays"),
-            axios.get("http://localhost:3001/Ditems"),
-            axios.get("http://localhost:3001/popular"),
-            axios.get("http://localhost:3001/streamingServices"),
-          ]);
+        const [ddaysRes, ditemsRes, servicesRes] = await Promise.all([
+          axios.get("http://localhost:3001/Ddays"), //정렬 부분 데이터
+          axios.get("http://localhost:3001/Ditems"), //필터 데이터
+          axios.get("http://localhost:3001/streamingServices"), //볼수있는 곳 데이터
+        ]);
         setSortOptions(ddaysRes.data);
         setGenreItems(ditemsRes.data);
-        setPopularItems(popularRes.data);
         setStreamingServices(servicesRes.data);
       } catch (error) {
         console.error("데이터 가져오기 오류:", error);
@@ -36,7 +33,7 @@ function Search() {
 
   return (
     <Serach>
-      <h2>페이지 제목</h2>
+      <Shtwo>페이지 제목</Shtwo>
       <Serr>
         <Sertitle>
           <Sertitled>
@@ -112,18 +109,7 @@ function Search() {
 
           <Sec>검색</Sec>
         </Sertitle>
-
-        <SerCard>
-          {popularItems.map((item, index) => (
-            <SerCards key={index}>
-              <Serimgs src={item.img} alt={item.id} />
-              <Sername>
-                <SerW>{item.title}</SerW>
-                <div>{item.date}</div>
-              </Sername>
-            </SerCards>
-          ))}
-        </SerCard>
+        <Spopular />
       </Serr>
     </Serach>
   );
@@ -132,10 +118,16 @@ function Search() {
 export default Search;
 
 const Serach = styled.div`
-  margin-top: 70px;
+  margin-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const Shtwo = styled.h2`
+  position: absolute;
+  top: 70px;
+  left: 370px;
 `;
 const Serr = styled.div`
   display: flex;
@@ -185,38 +177,7 @@ const Sec = styled.div`
   justify-content: center;
   font-size: 18px;
 `;
-const SerCard = styled.div`
-  width: 1000px;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
-const SerCards = styled.div`
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-  margin: 20px;
-  width: 19%;
-  height: 370px;
-`;
-const Serimgs = styled.img`
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
-`;
-const Sername = styled.div`
-  font-size: 16px;
-  padding: 20px 10px 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`;
-const SerW = styled.div`
-  font-weight: 800;
-  font-size: 17px;
-`;
 const Sinput = styled.input`
   width: 210px;
   height: 20px;
