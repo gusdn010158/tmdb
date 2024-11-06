@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
 import axios from "axios";
 import Spopular from "./Spopular";
-
+import { useParams } from "react-router-dom";
 function Search() {
   const [isSortOpen, setSortOpen] = useState(false);
   const [isStreamingOpen, setStreamingOpen] = useState(false);
   const [isFilterOpen, setFilterOpen] = useState(true);
-
+  const { category } = useParams();
+  const [data, setData] = useState([]);
   const [streamingServices, setStreamingServices] = useState([]);
   const [genreItems, setGenreItems] = useState([]);
   const [sortOptions, setSortOptions] = useState([]);
@@ -30,7 +31,17 @@ function Search() {
     };
     fetchData();
   }, []);
-
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3001/${category}`);
+        setData(response.data);
+      } catch (error) {
+        console.error("데이터 가져오기 오류:", error);
+      }
+    };
+    fetchData();
+  }, [category]);
   return (
     <Serach>
       <Shtwo>페이지 제목</Shtwo>
@@ -109,7 +120,7 @@ function Search() {
 
           <Sec>검색</Sec>
         </Sertitle>
-        <Spopular />
+        <Spopular data={data} />
       </Serr>
     </Serach>
   );
