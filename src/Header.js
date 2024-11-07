@@ -2,8 +2,9 @@
 // import styled from "styled-components";
 // import { Link } from "react-router-dom";
 // function Header() {
-//   const [Toggle, setToggle] = useState(false);
-//   const [T, setT] = useState(false);
+//   const [isPlusToastVisible, setPlusToastVisible] = useState(false);
+//   const [isLangDropdownOpen, setLangDropdownOpen] = useState(false);
+
 //   return (
 //     <Head>
 //       <Content>
@@ -25,19 +26,19 @@
 //           <div>
 //             <Ftitle>
 //               <Fimg
-//                 onClick={() => setT(!T)}
+//                 onClick={() => setPlusToastVisible(!isPlusToastVisible)}
 //                 src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-371-plus-white-0bac34f16124808a12ea863b4d9cc6e599dee7c0a80658cfe9ead26939e64517.svg"
 //               />
-//               {T && (
+//               {isPlusToastVisible && (
 //                 <Plustoast>
 //                   찾으시는 영화나 TV 프로그램이 없나요? 로그인 하셔서 직접
 //                   만들어주세요.
 //                 </Plustoast>
 //               )}
 //               <F2
-//                 onMouseEnter={() => setToggle(true)}
-//                 onMouseLeave={() => setToggle(false)}
-//                 active={Toggle}
+//                 onMouseEnter={() => setLangDropdownOpen(true)}
+//                 onMouseLeave={() => setLangDropdownOpen(false)}
+//                 active={isLangDropdownOpen}
 //               >
 //                 KO
 //               </F2>
@@ -311,6 +312,16 @@ function Header() {
   );
 }
 
+const SubMenu = ({ left, items, basePath }) => (
+  <StyledSubMenu left={left}>
+    {items.map((item, index) => (
+      <SubMenuItem to={`${basePath}/${index}`} key={index}>
+        {item}
+      </SubMenuItem>
+    ))}
+  </StyledSubMenu>
+);
+
 function MovieMenu() {
   const [movieMenuOpen, setMovieMenuOpen] = useState(false);
   const movieItems = ["인기", "현재 상영중", "개봉 예정", "높은 평점"];
@@ -321,7 +332,9 @@ function MovieMenu() {
       onMouseLeave={() => setMovieMenuOpen(false)}
     >
       영화
-      {movieMenuOpen && <SubMenu left="220px" items={movieItems} />}
+      {movieMenuOpen && (
+        <SubMenu left="220px" items={movieItems} basePath="/Search/movies" />
+      )}
     </TitleN>
   );
 }
@@ -336,7 +349,9 @@ function TvMenu() {
       onMouseLeave={() => setTvMenuOpen(false)}
     >
       TV 프로그램
-      {tvMenuOpen && <SubMenu left="300px" items={tvItems} />}
+      {tvMenuOpen && (
+        <SubMenu left="300px" items={tvItems} basePath="/Search/tv" />
+      )}
     </TitleN>
   );
 }
@@ -351,7 +366,9 @@ function PeopleMenu() {
       onMouseLeave={() => setPeopleMenuOpen(false)}
     >
       인물
-      {peopleMenuOpen && <SubMenu left="410px" items={peopleItems} />}
+      {peopleMenuOpen && (
+        <SubMenu left="410px" items={peopleItems} basePath="/Search/people" />
+      )}
     </TitleN>
   );
 }
@@ -366,20 +383,12 @@ function MoreMenu() {
       onMouseLeave={() => setMoreMenuOpen(false)}
     >
       More
-      {moreMenuOpen && <SubMenu left="480px" items={moreItems} />}
+      {moreMenuOpen && (
+        <SubMenu left="480px" items={moreItems} basePath="/Search/more" />
+      )}
     </TitleN>
   );
 }
-
-const SubMenu = ({ left, items }) => (
-  <StyledSubMenu left={left}>
-    {items.map((item, index) => (
-      <SubMenuItem to="/Serach" key={index}>
-        {item}
-      </SubMenuItem>
-    ))}
-  </StyledSubMenu>
-);
 
 const Head = styled.div`
   color: #fff;

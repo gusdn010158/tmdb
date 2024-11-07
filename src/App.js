@@ -33,7 +33,7 @@ function App() {
           }
         />
 
-        <Route path="/Serach/*" element={<Search />} />
+        <Route path="/Search/*" element={<Search />} />
       </Routes>
       <Bottom />
     </APP>
