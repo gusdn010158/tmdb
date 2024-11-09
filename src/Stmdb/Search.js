@@ -8,12 +8,20 @@ import Sfeel from "./Sfeel";
 import Stwo from "./Stwo";
 import Sthree from "./Sthree";
 import Sfour from "./Sfour";
+import Stvone from "./Stvone";
+import Stvtwo from "./Stvtwo";
+import Stvthree from "./Stvthree";
+import Stvfour from "./Stvfour";
 
 const movieItems = [
-  { name: "인기", path: "/Search/movies/0" },
-  { name: "현재 상영중", path: "/Search/movies/1" },
-  { name: "개봉 예정", path: "/Search/movies/2" },
-  { name: "높은 평점", path: "/Search/movies/3" },
+  { name: "인기 영화", path: "/Search/movies/0" },
+  { name: "현재 상영 영화", path: "/Search/movies/1" },
+  { name: "개봉 예정 영화", path: "/Search/movies/2" },
+  { name: "높은 평점의 인기영화", path: "/Search/movies/3" },
+  { name: "인기TV프로그램", path: "/Search/tv/0" },
+  { name: "오늘 방영할 TV프로그램", path: "/Search/tv/1" },
+  { name: "현재 방영중인TV프로그램", path: "/Search/tv/2" },
+  { name: "높은 평점의 TV프로그램", path: "/Search/tv/3" },
 ];
 
 function Search() {
@@ -39,6 +47,10 @@ function Search() {
           <Route path="/movies/1" element={<Stwo />} />
           <Route path="/movies/2" element={<Sthree />} />
           <Route path="/movies/3" element={<Sfour />} />
+          <Route path="/tv/0" element={<Stvone />} />
+          <Route path="/tv/1" element={<Stvtwo />} />
+          <Route path="/tv/2" element={<Stvthree />} />
+          <Route path="/tv/3" element={<Stvfour />} />
         </Routes>
       </Serr>
     </Serach>
@@ -57,7 +69,7 @@ const Serach = styled.div`
 const Shtwo = styled.h2`
   position: absolute;
   top: 70px;
-  left: 370px;
+  left: 330px;
 `;
 
 const Serr = styled.div`

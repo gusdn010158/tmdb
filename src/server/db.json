@@ -434,7 +434,70 @@
       "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg"
     }
   ],
+  "fouring": [
+    {
+      "id": "1",
 
+      "date": "2월 06, 1927",
+      "title": "라이즈 오브 더 풋솔져",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg"
+    },
+    {
+      "id": "2",
+      "title": "사랑의 블랙홀",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg",
+      "date": "8월 01일, 1950"
+    },
+    {
+      "id": "3",
+      "title": "라스트 오브 어스",
+      "date": "1월 15, 2023",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg"
+    },
+    {
+      "id": "4",
+      "title": "디아볼릭",
+      "date": "1월 29, 1955",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/6wmNcHjXnBEhlAvsUUR6ytdLKHO.jpg"
+    },
+    {
+      "id": "5",
+
+      "date": "10월 04, 1968",
+      "title": "라이즈 오브 더 풋솔져",
+      "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg"
+    },
+    {
+      "id": "6",
+      "title": "골드랜섬",
+      "date": "5월 05, 2016",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/yTfzOGKAKRqsvXToImspDlOGHaa.jpg"
+    },
+    {
+      "id": "7",
+      "title": "스니치: 마약과의 전쟁",
+      "date": "11월 11, 2011",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/rhVrb6e2xX3VVDZNIfRIo0oQwZT.jpg"
+    },
+    {
+      "id": "8",
+      "title": "위시 어폰",
+      "date": "7월 07, 2017",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/kHiSfrIh5NDoVZDCcQhzq3KHcsB.jpg"
+    },
+    {
+      "id": "9",
+      "title": "스노우 폴스",
+      "date": "1월 17, 2023",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/wfZklSVDJPpHT0Arq4A8GY8Q9S9.jpg"
+    },
+    {
+      "id": "10",
+      "title": "역마차",
+      "date": "9월 03, 1939",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/uIWZB1lzxk6RGwzakM2lMnRah86.jpg"
+    }
+  ],
   "watching": [
     {
       "id": "1",

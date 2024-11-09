@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
-function Sfour(props) {
+function Stvfour(props) {
   const [fouring, setFouring] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function Sfour(props) {
   );
 }
 
-export default Sfour;
+export default Stvfour;
 const SerCard = styled.div`
   width: 1000px;
 

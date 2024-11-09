@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
-function Sfour(props) {
-  const [fouring, setFouring] = useState([]);
+function Stvone() {
+  const [popularItems, setPopularItems] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/fouring")
+      .get("http://localhost:3001/popular")
       .then((response) => {
-        setFouring(response.data);
+        setPopularItems(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -17,7 +17,7 @@ function Sfour(props) {
 
   return (
     <SerCard>
-      {fouring.map((item, index) => (
+      {popularItems.map((item, index) => (
         <SerCards key={index}>
           <Serimgs src={item.img} alt={item.id} />
           <Sername>
@@ -30,7 +30,7 @@ function Sfour(props) {
   );
 }
 
-export default Sfour;
+export default Stvone;
 const SerCard = styled.div`
   width: 1000px;
 
