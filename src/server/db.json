@@ -247,6 +247,42 @@
       "title": "페일 블루아이",
       "date": "12월 23, 2022",
       "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/hnwq7IbbmBVLGaXcdoTiEk4Z63q.jpg"
+    },
+    {
+      "id": 11,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
+    },
+    {
+      "id": 12,
+      "title": "나니아 연대기: 사자, 마녀 그리고 옷장",
+      "date": "12월 07, 2005",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/xo86KtpjsGZRuI3vF17aHxHNX3E.jpg"
+    },
+    {
+      "id": 13,
+      "title": "루시퍼",
+      "date": "1월 25, 2016",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg"
+    },
+    {
+      "id": 14,
+      "title": "레슨 플랜",
+      "date": "11월 23, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg"
+    },
+    {
+      "id": 15,
+      "title": "왕좌의 게임",
+      "date": "4월 17, 2011",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/lxfllsQQ32gKglUxrM61WaFeNcy.jpg"
+    },
+    {
+      "id": 16,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
     }
   ],
   "Ddays": [
@@ -432,12 +468,53 @@
       "id": 9,
       "title": "사랑의 블랙홀",
       "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/ttBydD0SynC0TMkW3AcnmsySkLp.jpg"
+    },
+    {
+      "id": "10",
+      "title": "역마차",
+      "date": "9월 03, 1939",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/uIWZB1lzxk6RGwzakM2lMnRah86.jpg"
+    },
+    {
+      "id": 11,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
+    },
+    {
+      "id": 12,
+      "title": "나니아 연대기: 사자, 마녀 그리고 옷장",
+      "date": "12월 07, 2005",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/xo86KtpjsGZRuI3vF17aHxHNX3E.jpg"
+    },
+    {
+      "id": 13,
+      "title": "루시퍼",
+      "date": "1월 25, 2016",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg"
+    },
+    {
+      "id": 14,
+      "title": "레슨 플랜",
+      "date": "11월 23, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg"
+    },
+    {
+      "id": 15,
+      "title": "왕좌의 게임",
+      "date": "4월 17, 2011",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/lxfllsQQ32gKglUxrM61WaFeNcy.jpg"
+    },
+    {
+      "id": 16,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
     }
   ],
   "fouring": [
     {
       "id": "1",
-
       "date": "2월 06, 1927",
       "title": "라이즈 오브 더 풋솔져",
       "img": "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/7uFcnzXTRpSax0QqF8lT1VWPNFO.jpg"
@@ -496,6 +573,42 @@
       "title": "역마차",
       "date": "9월 03, 1939",
       "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/uIWZB1lzxk6RGwzakM2lMnRah86.jpg"
+    },
+    {
+      "id": 11,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
+    },
+    {
+      "id": 12,
+      "title": "나니아 연대기: 사자, 마녀 그리고 옷장",
+      "date": "12월 07, 2005",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/xo86KtpjsGZRuI3vF17aHxHNX3E.jpg"
+    },
+    {
+      "id": 13,
+      "title": "루시퍼",
+      "date": "1월 25, 2016",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg"
+    },
+    {
+      "id": 14,
+      "title": "레슨 플랜",
+      "date": "11월 23, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg"
+    },
+    {
+      "id": 15,
+      "title": "왕좌의 게임",
+      "date": "4월 17, 2011",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/lxfllsQQ32gKglUxrM61WaFeNcy.jpg"
+    },
+    {
+      "id": 16,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
     }
   ],
   "watching": [
@@ -558,6 +671,43 @@
       "title": "역마차",
       "date": "9월 03, 1939",
       "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/uIWZB1lzxk6RGwzakM2lMnRah86.jpg"
+    },
+
+    {
+      "id": 11,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
+    },
+    {
+      "id": 12,
+      "title": "나니아 연대기: 사자, 마녀 그리고 옷장",
+      "date": "12월 07, 2005",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/xo86KtpjsGZRuI3vF17aHxHNX3E.jpg"
+    },
+    {
+      "id": 13,
+      "title": "루시퍼",
+      "date": "1월 25, 2016",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg"
+    },
+    {
+      "id": 14,
+      "title": "레슨 플랜",
+      "date": "11월 23, 2022",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/e4nR9m6nY7HpaaeiEL1ixaYqReq.jpg"
+    },
+    {
+      "id": 15,
+      "title": "왕좌의 게임",
+      "date": "4월 17, 2011",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/lxfllsQQ32gKglUxrM61WaFeNcy.jpg"
+    },
+    {
+      "id": 16,
+      "title": "스파이더맨: 노 웨이 홈",
+      "date": "12월 15, 2021",
+      "img": "https://www.themoviedb.org/t/p/w220_and_h330_face/voddFVdjUoAtfoZZp2RUmuZILDI.jpg"
     }
   ]
 }
