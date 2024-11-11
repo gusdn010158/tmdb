@@ -125,7 +125,7 @@ function MoreMenu() {
     >
       More
       {moreMenuOpen && (
-        <SubMenu left="480px" items={moreItems} basePath="/Search/more" />
+        <SubMenu left="480px" items={moreItems} basePath="/more" />
       )}
     </TitleN>
   );
