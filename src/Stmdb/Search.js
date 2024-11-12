@@ -25,6 +25,7 @@ const movieItems = [
   { name: "현재 방영중인TV프로그램", path: "/Search/tv/2" },
   { name: "높은 평점의 TV프로그램", path: "/Search/tv/3" },
   { name: "인기인물", path: "/Search/people/0" },
+  { name: "", path: "/Search/more/0" },
 ];
 
 function Search() {
@@ -35,13 +36,15 @@ function Search() {
   );
   const pageTitle = currentMovieItem ? currentMovieItem.name : "페이지 제목";
 
-  const isPeopleRoute = location.pathname === "/Search/people/0";
-
+  // const isPeopleRoute = location.pathname === "/Search/people/0";
+  const isHiddenRoute =
+    location.pathname === "/Search/people/0" ||
+    location.pathname === "/Search/more/0";
   return (
     <Serach>
       <Shtwo>{pageTitle}</Shtwo>
       <Serr>
-        {!isPeopleRoute && (
+        {!isHiddenRoute && (
           <Sertitle>
             <Swjd />
             <Slook />
