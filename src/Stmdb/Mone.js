@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
-function Mone(props) {
-  const [Mone, setMone] = useState();
+function Mone() {
+  const [Mone, setMone] = useState([]);
   useEffect(() => {
     axios
       .get("http://localhost:3001/Mone")
@@ -18,7 +18,7 @@ function Mone(props) {
       <Mon>
         <h2>주간 사이트 기여자 - 기간 : November 05-11</h2>
         {Mone.map((item, index) => (
-          <Mfuc>
+          <Mfuc key={index}>
             <Mhthr>{item.num}</Mhthr>
             <Mimg src={item.img} alt={index} />
             <div>

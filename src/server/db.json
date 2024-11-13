@@ -839,7 +839,6 @@
       "name": "Samara",
       "text": "가입: 2014, 일 평균 편집수: 998.31"
     },
-
     {
       "num": "20,208",
       "img": "https://media.themoviedb.org/t/p/w45_and_h45_face/5BvxGhRE7yjtbHCXgrTxPk9hBXp.jpg",
@@ -875,12 +874,6 @@
       "img": "https://media.themoviedb.org/t/p/w45_and_h45_face/fEwOBxzLc0XzrusWoxPtjDwEvgO.jpg",
       "name": "yhiraki",
       "text": "가입: 2018, 일 평균 편집수: 4.16"
-    },
-    {
-      "num": "",
-      "img": "",
-      "name": "",
-      "text": ""
     }
   ]
 }

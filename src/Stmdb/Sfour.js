@@ -63,3 +63,9 @@ const SerW = styled.div`
   font-weight: 800;
   font-size: 17px;
 `;
+//, {
+//   "num": "",
+//   "img": "",
+//   "name": "",
+//   "text": ""
+// }
