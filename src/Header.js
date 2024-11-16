@@ -116,7 +116,13 @@ function PeopleMenu() {
 
 function MoreMenu() {
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
-  const moreItems = ["토론 내역", "기여 랭킹", "지원", "API"];
+
+  const moreItems = [
+    { label: "토론 내역", path: "/to" },
+    { label: "기여 랭킹", path: "/Search/more/1" },
+    { label: "지원", path: "/wl" },
+    { label: "API", path: "/api" },
+  ];
 
   return (
     <TitleN
@@ -125,7 +131,13 @@ function MoreMenu() {
     >
       More
       {moreMenuOpen && (
-        <SubMenu left="480px" items={moreItems} basePath="/Search/more" />
+        <StyledSubMenu left="480px">
+          {moreItems.map((item, index) => (
+            <SubMenuItem to={item.path} key={index}>
+              {item.label}
+            </SubMenuItem>
+          ))}
+        </StyledSubMenu>
       )}
     </TitleN>
   );
