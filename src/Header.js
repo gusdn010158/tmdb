@@ -117,12 +117,7 @@ function PeopleMenu() {
 function MoreMenu() {
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
 
-  const moreItems = [
-    { label: "토론 내역", path: "/to" },
-    { label: "기여 랭킹", path: "/Search/more/1" },
-    { label: "지원", path: "/wl" },
-    { label: "API", path: "/api" },
-  ];
+  const moreItems = [{ label: "기여 랭킹", path: "/Search/more/1" }];
 
   return (
     <TitleN
