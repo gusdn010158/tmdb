@@ -49,8 +49,8 @@ function Mone() {
 }
 
 function SimpleChart({ data }) {
-  const width = 600;
-  const height = 400;
+  const width = 700;
+  const height = 300;
   const padding = 50;
 
   const maxValue = Math.max(...data.map((d) => d.value));
@@ -197,7 +197,7 @@ function SimpleChart({ data }) {
 export default Mone;
 
 const ChartContainer = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   text-align: center;
 `;
 
