@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 function SimpleChart({ data }) {
   const width = 700;
   const height = 300;
