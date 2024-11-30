@@ -11,7 +11,10 @@ function Mone() {
     { date: "Day 4", value: 30 },
     { date: "Day 5", value: 25 },
     { date: "Day 6", value: 40 },
-    { date: "Day 7", value: 35 },
+    { date: "Day 7", value: 45 },
+    { date: "Day 8", value: 35 },
+    { date: "Day 9", value: 25 },
+    { date: "Day 10", value: 55 },
   ]);
 
   useEffect(() => {
