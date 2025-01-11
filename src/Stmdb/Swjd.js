@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import styled from "styled-components";
 import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
-import data from "./server/db.json";
+import data from "../server/db.json";
 function Swjd(props) {
   const [isSortOpen, setSortOpen] = useState(false);
   const [sortOptions, setSortOptions] = useState([]);
