@@ -6,17 +6,6 @@ import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
 function Sfeel(props) {
   const [isFilterOpen, setFilterOpen] = useState(true);
   const [genreItems, setGenreItems] = useState([]);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get(`http://localhost:3001/Ditems`);
-  //       setGenreItems(response.data);
-  //     } catch (error) {
-  //       console.error("데이터 가져오기 오류:", error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
 
   useEffect(() => {
     setGenreItems(data.Ditems);

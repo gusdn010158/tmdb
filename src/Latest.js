@@ -126,17 +126,6 @@ function Latest() {
     setSelectedCategory(category);
   };
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3001/latestItems")
-  //     .then((response) => {
-  //       setLatestItems(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
-
   useEffect(() => {
     setLatestItems(data.latestItems);
   }, []);

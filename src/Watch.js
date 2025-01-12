@@ -88,17 +88,6 @@ function Watch(props) {
     setSelectedCategory(category);
   };
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3001/watching")
-  //     .then((response) => {
-  //       setWatching(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
-
   useEffect(() => {
     setWatching(data.watching);
   }, []);

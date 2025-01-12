@@ -4,16 +4,6 @@ import data from "../server/db.json";
 function Spopular() {
   const [popularItems, setPopularItems] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3001/popular")
-  //     .then((response) => {
-  //       setPopularItems(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
   useEffect(() => {
     setPopularItems(data.popular);
   }, []);

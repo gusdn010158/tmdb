@@ -94,16 +94,6 @@ function Popular() {
     setSelectedCategory(category);
   };
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3001/popular")
-  //     .then((response) => {
-  //       setPopular(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
   useEffect(() => {
     setPopular(data.popular);
   }, []);

@@ -4,16 +4,6 @@ import data from "../server/db.json";
 function Sthree(props) {
   const [watching, setWatching] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3001/watching")
-  //     .then((response) => {
-  //       setWatching(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
   useEffect(() => {
     setWatching(data.watching);
   }, []);

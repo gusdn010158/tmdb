@@ -5,17 +5,6 @@ import data from "./server/db.json";
 function Board() {
   const [text, setText] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get("http://localhost:3001/text");
-  //       setText(response.data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
   useEffect(() => {
     setText(data.text);
   }, []);

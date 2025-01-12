@@ -7,17 +7,7 @@ function Spleplo(props) {
   useEffect(() => {
     setple(data.pleplo);
   }, []);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get("http://localhost:3001/pleplo");
-  //       setple(response.data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
+
   return (
     <>
       <Ple>

@@ -5,16 +5,6 @@ import data from "./server/db.json";
 function Bottom() {
   const [sect, setSect] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3001/sections")
-  //     .then((response) => {
-  //       setSect(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data:");
-  //     });
-  // }, []);
   useEffect(() => {
     setSect(data.sections);
   }, []);

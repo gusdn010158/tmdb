@@ -96,16 +96,6 @@ function Say() {
     setSelectedCategory(category);
   };
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:3001/trendingItems")
-  //     .then((response) => {
-  //       setTrendingItems(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
   useEffect(() => {
     setTrendingItems(data.trendingItems);
   }, []);

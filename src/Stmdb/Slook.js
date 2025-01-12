@@ -5,19 +5,6 @@ import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
 function Slook(props) {
   const [isStreamingOpen, setStreamingOpen] = useState(false);
   const [streamingServices, setStreamingServices] = useState([]);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         `http://localhost:3001/streamingServices`
-  //       );
-  //       setStreamingServices(response.data);
-  //     } catch (error) {
-  //       console.error("데이터 가져오기 오류:", error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
 
   useEffect(() => {
     setStreamingServices(data.streamingServices);
