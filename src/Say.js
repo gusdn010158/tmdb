@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import data from "./server/db.json";
 import Section from "./Section";
 import Togglebtn from "./Togglebtn";
 
@@ -96,17 +96,19 @@ function Say() {
     setSelectedCategory(category);
   };
 
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3001/trendingItems")
+  //     .then((response) => {
+  //       setTrendingItems(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/trendingItems")
-      .then((response) => {
-        setTrendingItems(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setTrendingItems(data.trendingItems);
   }, []);
-
   const handleScroll = (e) => {
     const { scrollLeft } = e.target; //가로 스크롤 위치를 나타냄
 

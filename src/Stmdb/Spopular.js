@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import data from "../server/db.json";
 function Spopular() {
   const [popularItems, setPopularItems] = useState([]);
 
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3001/popular")
+  //     .then((response) => {
+  //       setPopularItems(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/popular")
-      .then((response) => {
-        setPopularItems(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setPopularItems(data.popular);
   }, []);
-
   return (
     <SerCard>
       {popularItems.map((item, index) => (

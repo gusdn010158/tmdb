@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import data from "../server/db.json";
 import styled from "styled-components";
 import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
 
 function Sfeel(props) {
   const [isFilterOpen, setFilterOpen] = useState(true);
   const [genreItems, setGenreItems] = useState([]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get(`http://localhost:3001/Ditems`);
+  //       setGenreItems(response.data);
+  //     } catch (error) {
+  //       console.error("데이터 가져오기 오류:", error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`http://localhost:3001/Ditems`);
-        setGenreItems(response.data);
-      } catch (error) {
-        console.error("데이터 가져오기 오류:", error);
-      }
-    };
-    fetchData();
+    setGenreItems(data.Ditems);
   }, []);
   return (
     <Sertitled>

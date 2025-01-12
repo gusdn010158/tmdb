@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Togglebtn from "./Togglebtn";
-import axios from "axios";
 
+import data from "./server/db.json";
 const Section = styled.section`
   width: 1300px;
   height: 388px;
@@ -126,15 +126,19 @@ function Latest() {
     setSelectedCategory(category);
   };
 
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3001/latestItems")
+  //     .then((response) => {
+  //       setLatestItems(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
+
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/latestItems")
-      .then((response) => {
-        setLatestItems(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setLatestItems(data.latestItems);
   }, []);
   const handleScroll = (e) => {
     const { scrollLeft } = e.target; //가로 스크롤 위치를 나타냄

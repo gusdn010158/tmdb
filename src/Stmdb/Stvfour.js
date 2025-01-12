@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import data from "../server/db.json";
 function Stvfour(props) {
   const [fouring, setFouring] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/fouring")
-      .then((response) => {
-        setFouring(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setFouring(data.fouring);
   }, []);
 
   return (

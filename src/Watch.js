@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Section from "./Section";
 import Togglebtn from "./Togglebtn";
-import axios from "axios";
+import data from "./server/db.json";
 
 const SectionContainer = styled.section`
   width: 1300px;
@@ -88,15 +88,19 @@ function Watch(props) {
     setSelectedCategory(category);
   };
 
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3001/watching")
+  //     .then((response) => {
+  //       setWatching(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
+
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/watching")
-      .then((response) => {
-        setWatching(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setWatching(data.watching);
   }, []);
   const handleScroll = (e) => {
     const { scrollLeft } = e.target; //가로 스크롤 위치를 나타냄

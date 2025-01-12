@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
+
+import data from "./server/db.json";
 import Section from "./Section";
 import Togglebtn from "./Togglebtn";
 
@@ -93,17 +94,19 @@ function Popular() {
     setSelectedCategory(category);
   };
 
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3001/popular")
+  //     .then((response) => {
+  //       setPopular(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/popular")
-      .then((response) => {
-        setPopular(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setPopular(data.popular);
   }, []);
-
   const handleScroll = (e) => {
     const { scrollLeft } = e.target; //가로 스크롤 위치를 나타냄
 

@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import data from "../server/db.json";
 function Sthree(props) {
   const [watching, setWatching] = useState([]);
 
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3001/watching")
+  //     .then((response) => {
+  //       setWatching(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/watching")
-      .then((response) => {
-        setWatching(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setWatching(data.watching);
   }, []);
-
   return (
     <SerCard>
       {watching.map((item, index) => (

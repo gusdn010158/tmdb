@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import data from "../server/db.json";
 
 function Mone() {
   const [Mone, setMone] = useState([]);
@@ -16,16 +16,8 @@ function Mone() {
     { date: "Day 9", value: 25 },
     { date: "Day 10", value: 55 },
   ]);
-
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/Mone")
-      .then((response) => {
-        setMone(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    setMone(data.Mone);
   }, []);
 
   return (

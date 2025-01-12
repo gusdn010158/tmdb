@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+
+import data from "../server/db.json";
 import styled from "styled-components";
 function Spleplo(props) {
   const [ple, setple] = useState([]);
-
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get("http://localhost:3001/pleplo");
-        setple(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchData();
+    setple(data.pleplo);
   }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get("http://localhost:3001/pleplo");
+  //       setple(response.data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
   return (
     <>
       <Ple>
