@@ -156,6 +156,9 @@ const Sc5Text = styled.div`
     font-size: 60px;
     color: #fff;
     border-bottom: 1px solid #fff;
+    @media (max-width: 1400px) {
+      font-size: 40px;
+    }
   }
 `;
 

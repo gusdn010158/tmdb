@@ -157,6 +157,10 @@ const Content = styled.div`
   width: 70%;
   display: flex;
   justify-content: center;
+  @media (max-width: 1400px) {
+    width: 100%;
+    justify-content: space-between;
+  }
 `;
 
 const ContentM = styled.div`
@@ -165,7 +169,7 @@ const ContentM = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  background-color: #032541;
+
   width: 100%;
   padding: 0 40px;
 `;
@@ -188,9 +192,8 @@ const Nlogo = styled(Link)`
 
 const TitleN = styled.li`
   list-style: none;
-  margin-right: 10px;
   padding: 15px;
-  font-weight: 60px;
+
   cursor: pointer;
 `;
 
