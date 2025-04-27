@@ -3,83 +3,134 @@ import data from "../server/db.json";
 import styled from "styled-components";
 import { AiOutlineRight, AiOutlineDown } from "react-icons/ai";
 
-function Sfeel(props) {
+function Sfeel() {
   const [isFilterOpen, setFilterOpen] = useState(true);
   const [genreItems, setGenreItems] = useState([]);
 
   useEffect(() => {
     setGenreItems(data.Ditems);
   }, []);
+
   return (
-    <Sertitled>
-      <Sertitledtop onClick={() => setFilterOpen(!isFilterOpen)}>
-        <div>필터</div>
-        <div>{isFilterOpen ? <AiOutlineDown /> : <AiOutlineRight />}</div>
-      </Sertitledtop>
+    <FilterContainer>
+      <FilterHeader type="button" onClick={() => setFilterOpen(!isFilterOpen)}>
+        <span>필터</span>
+        <IconWrapper>
+          {isFilterOpen ? <AiOutlineDown /> : <AiOutlineRight />}
+        </IconWrapper>
+      </FilterHeader>
+
       {isFilterOpen && (
         <>
-          <Sercon>
-            <div>시청 유무</div>
-            <div>
-              <input type="radio" name="viewStatus" /> 전체
-            </div>
-            <div>
-              <input type="radio" name="viewStatus" /> 안 본 영화
-            </div>
-            <div>
-              <input type="radio" name="viewStatus" /> 본 영화
-            </div>
-          </Sercon>
+          <FilterSection>
+            <SectionTitle>시청 유무</SectionTitle>
+            <RadioGroup>
+              <label>
+                <input type="radio" name="viewStatus" value="all" /> 전체
+              </label>
+              <label>
+                <input type="radio" name="viewStatus" value="unwatched" /> 안 본
+                영화
+              </label>
+              <label>
+                <input type="radio" name="viewStatus" value="watched" /> 본 영화
+              </label>
+            </RadioGroup>
+          </FilterSection>
 
-          <Sercon>
-            <div>장르</div>
-            {genreItems.map((item) => (
-              <Diwkd key={item.Ditem}>{item.Ditem}</Diwkd>
-            ))}
-          </Sercon>
+          <FilterSection>
+            <SectionTitle>장르</SectionTitle>
+            <GenreList>
+              {genreItems.map((item, index) => (
+                <GenreItem key={index}>{item.Ditem}</GenreItem>
+              ))}
+            </GenreList>
+          </FilterSection>
 
-          <div>키워드</div>
-          <Sinput />
+          <FilterSection>
+            <SectionTitle>키워드</SectionTitle>
+            <KeywordInput type="text" placeholder="검색어를 입력하세요" />
+          </FilterSection>
         </>
       )}
-    </Sertitled>
+    </FilterContainer>
   );
 }
 
 export default Sfeel;
 
-const Sertitledtop = styled.div`
-  display: flex;
-  height: 40px;
-  justify-content: space-between;
-  cursor: pointer;
-`;
-const Sertitled = styled.div`
-  margin: 0px 20px 20px 20px;
+const FilterContainer = styled.section`
+  margin: 0 20px 20px 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 5px 20px;
+  padding: 20px;
   border-radius: 10px;
   width: 220px;
   font-size: 18px;
   font-weight: 800;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 10px;
 `;
-const Sercon = styled.div`
+
+const FilterHeader = styled.button`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0;
+`;
+
+const IconWrapper = styled.span`
+  display: flex;
+  align-items: center;
+`;
+
+const FilterSection = styled.div`
   border-bottom: 1px solid gray;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0;
 `;
-const Sinput = styled.input`
-  width: 210px;
-  height: 20px;
+
+const SectionTitle = styled.h3`
+  font-size: 16px;
+  margin-bottom: 8px;
 `;
-const Diwkd = styled.div`
+
+const RadioGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+`;
+
+const GenreList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+`;
+
+const GenreItem = styled.span`
   border-radius: 40px;
-  margin: 3px;
   border: 1px solid black;
-  padding: 2px 10px;
-  display: inline-block; /* 텍스트 길이에 맞게 width 조정 */
-  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+  padding: 4px 10px;
+  font-size: 14px;
+  white-space: nowrap;
+`;
+
+const KeywordInput = styled.input`
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 8px;
 `;

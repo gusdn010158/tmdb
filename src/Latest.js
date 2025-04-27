@@ -33,10 +33,7 @@ const Wrapper = styled.div`
       #fff 100%
     );
     pointer-events: none; //마우스 이벤트를 차단
-    opacity: ${(props) =>
-      props.hasScrollEffect
-        ? 1
-        : 0}; // opacity가  hasScrollEffect이 true가 되었을때 1이 되게 아니면 0
+    opacity: ${(props) =>props.hasScrollEffect? 1: 0}; // opacity가  hasScrollEffect이 true가 되었을때 1이 되게 아니면 0
     transition: opacity 0.3s linear; // 트랜지션 추가
   }
 `;
