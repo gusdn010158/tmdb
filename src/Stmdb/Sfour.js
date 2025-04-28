@@ -38,6 +38,17 @@ const SerCards = styled.div`
   margin: 20px;
   width: 19%;
   height: 370px;
+  @media (width: 1200px) {
+    width: 30%;
+  }
+
+  @media (width: 800px) {
+    width: 45%;
+  }
+
+  @media (width: 400px) {
+    width: 90%;
+  }
 `;
 const Serimgs = styled.img`
   width: 100%;
@@ -56,9 +67,3 @@ const SerW = styled.div`
   font-weight: 800;
   font-size: 17px;
 `;
-//, {
-//   "num": "",
-//   "img": "",
-//   "name": "",
-//   "text": ""
-// }
